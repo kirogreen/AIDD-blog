@@ -1,0 +1,9 @@
+theme = 'hugo-theme-relearn'
+baseURL = 'http://localhost:1313'
+languageCode = 'zh-cn'
+title = 'Learn Latest AIDD'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/McShelby/hugo-theme-relearn'
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs :: Learn Latest AIDD</title>
+    <link>http://localhost:1313/blog/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 04 Oct 2025 15:00:28 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>De novo design of phospho-tyrosine peptide binders</title>
+      <link>http://localhost:1313/blog/test/index.html</link>
+      <pubDate>Sat, 04 Oct 2025 15:00:28 +0800</pubDate>
+      <guid>http://localhost:1313/blog/test/index.html</guid>
+      <description>daily summary of latest AIDD literature</description>
+    </item>
+    <item>
+      <title>my first post</title>
+      <link>http://localhost:1313/blog/my-first-post/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/my-first-post/index.html</guid>
+      <description>📄 Summary of the Paper Title: Connecting chemical and protein sequence space to predict biocatalytic reactions&#xA;Objective:&#xA;To enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.&#xA;Approach:&#xA;Library Construction (akGLib1):&#xA;Curated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation:</description>
+    </item>
+  </channel>
+</rss>

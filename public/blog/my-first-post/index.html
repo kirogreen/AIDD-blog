@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.1">
+    <meta name="generator" content="Relearn 8.0.0+6f266e9b46dc2a685d18950a0f32c37f74e6c50d">
+    <meta name="description" content="📄 Summary of the Paper Title: Connecting chemical and protein sequence space to predict biocatalytic reactions
+Objective:
+To enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.
+Approach:
+Library Construction (akGLib1):
+Curated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation:">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="my first post :: Learn Latest AIDD">
+    <meta name="twitter:description" content="📄 Summary of the Paper Title: Connecting chemical and protein sequence space to predict biocatalytic reactions
+Objective:
+To enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.
+Approach:
+Library Construction (akGLib1):
+Curated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation:">
+    <meta property="og:url" content="http://localhost:1313/blog/my-first-post/index.html">
+    <meta property="og:site_name" content="Learn Latest AIDD">
+    <meta property="og:title" content="my first post :: Learn Latest AIDD">
+    <meta property="og:description" content="📄 Summary of the Paper Title: Connecting chemical and protein sequence space to predict biocatalytic reactions
+Objective:
+To enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.
+Approach:
+Library Construction (akGLib1):
+Curated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation:">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Blogs">
+    <meta itemprop="name" content="my first post :: Learn Latest AIDD">
+    <meta itemprop="description" content="📄 Summary of the Paper Title: Connecting chemical and protein sequence space to predict biocatalytic reactions
+Objective:
+To enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.
+Approach:
+Library Construction (akGLib1):
+Curated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation:">
+    <meta itemprop="wordCount" content="529">
+    <title>my first post :: Learn Latest AIDD</title>
+    <link href="/css/auto-complete/auto-complete.min.css?1759561784" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1759561784" defer></script>
+    <script src="/js/search-lunr.js?1759561784" defer></script>
+    <script src="/js/search.js?1759561784" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1759561784";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1759561784" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1759561784" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1759561784" defer></script>
+    <script src="/js/lunr/lunr.zh.min.js?1759561784" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['zh'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759561784" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1759561784" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1759561784" rel="stylesheet">
+    <link href="/css/theme.css?1759561784" rel="stylesheet">
+    <link href="/css/format-html.css?1759561784" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/blog\/my-first-post\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/blog/my-first-post/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-summary-of-the-paper">📄 <strong>Summary of the Paper</strong></a></li>
+        <li><a href="#-key-innovations">💡 <strong>Key Innovations</strong></a></li>
+        <li><a href="#-possible-applications">🧪 <strong>Possible Applications</strong></a></li>
+        <li><a href="#-conclusion">✅ <strong>Conclusion</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#一catnip核心研究总结">一、CATNIP核心研究总结</a>
+      <ul>
+        <li><a href="#研究背景">研究背景</a></li>
+        <li><a href="#解决方案三阶段数据驱动导航系统">解决方案：三阶段数据驱动&quot;导航系统&quot;</a></li>
+        <li><a href="#研究意义">研究意义</a></li>
+      </ul>
+    </li>
+    <li><a href="#二领域专家展望总结">二、领域专家展望总结</a>
+      <ul>
+        <li><a href="#当前应用与机遇">当前应用与机遇</a></li>
+        <li><a href="#主要挑战">主要挑战</a></li>
+        <li><a href="#未来展望">未来展望</a></li>
+        <li><a href="#最终愿景">最终愿景</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Learn Latest AIDD</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/blog/index.html"><span itemprop="name">Blogs</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">my first post</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/blog/test/index.html" title="De novo design of phospho-tyrosine peptide binders (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable blog" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="my-first-post">my first post</h1>
+
+<h3 id="-summary-of-the-paper">📄 <strong>Summary of the Paper</strong></h3>
+<p><strong>Title:</strong> <em>Connecting chemical and protein sequence space to predict biocatalytic reactions</em></p>
+<p><strong>Objective:</strong><br>
+To enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.</p>
+<p><strong>Approach:</strong></p>
+<ol>
+<li>
+<p><strong>Library Construction (akGLib1):</strong></p>
+<ul>
+<li>Curated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks).</li>
+<li>Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes.</li>
+</ul>
+</li>
+<li>
+<p><strong>High-Throughput Experimentation:</strong></p>
+<ul>
+<li>Screened 111 diverse substrates against the enzyme library in a 96-well plate format.</li>
+<li>Discovered <strong>215 new biocatalytic reactions</strong>, including hydroxylation, desaturation, and oxidative cleavage.</li>
+<li>38% of enzymes and 32% of substrates showed activity, including complex natural products and pharmaceuticals.</li>
+</ul>
+</li>
+<li>
+<p><strong>Machine Learning Model Development:</strong></p>
+<ul>
+<li>Combined new and literature data into <strong>BioCatSet1</strong> (354 reactions).</li>
+<li>Built two gradient-boosted machine learning models:
+<ul>
+<li><strong>Substrate-to-enzyme</strong>: Predicts which enzymes are likely to react with a given substrate.</li>
+<li><strong>Enzyme-to-substrate</strong>: Predicts which substrates a given enzyme is likely to transform.</li>
+</ul>
+</li>
+<li>Used chemical descriptors (MORFEUS) and sequence similarity (SSN) as inputs.</li>
+</ul>
+</li>
+<li>
+<p><strong>CATNIP Web Tool:</strong></p>
+<ul>
+<li>Developed an open-access web platform (<a href="https://catnip.chem.cmu.edu/" rel="external" target="_blank">CATNIP</a>) that allows users to input a substrate or enzyme sequence and receive ranked predictions for compatible partners.</li>
+<li>Validated predictions experimentally with high success rates (e.g., 7 out of 10 predicted enzymes converted sparteine).</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-key-innovations">💡 <strong>Key Innovations</strong></h3>
+<ul>
+<li><strong>First Large-Scale Mapping</strong> of chemical and protein sequence space for a mechanistically diverse enzyme family.</li>
+<li><strong>Integration of High-Throughput Experimentation with Machine Learning</strong> to generate a robust, experimentally validated dataset.</li>
+<li><strong>Dual-Purpose Predictive Models</strong> that work in both directions: from substrate to enzyme and vice versa.</li>
+<li><strong>CATNIP Platform</strong>: A user-friendly, open-access tool that democratizes biocatalytic reaction prediction.</li>
+<li><strong>High Success Rate</strong>: Demonstrated predictive power with real-world substrates and enzymes, including previously uncharacterized ones.</li>
+</ul>
+<hr>
+<h3 id="-possible-applications">🧪 <strong>Possible Applications</strong></h3>
+<ul>
+<li><strong>Drug Discovery &amp; Pharmaceutical Synthesis</strong>: Accelerate the development of biocatalytic routes for complex molecules.</li>
+<li><strong>Green Chemistry</strong>: Enable more sustainable synthesis pathways using enzymes.</li>
+<li><strong>Enzyme Engineering</strong>: Guide protein engineering by identifying promising starting points.</li>
+<li><strong>Metabolic Engineering &amp; Natural Product Biosynthesis</strong>: Predict and design pathways for producing valuable compounds.</li>
+<li><strong>Educational &amp; Industrial Use</strong>: CATNIP can be used in academic and industrial R&amp;D to quickly identify viable biocatalytic steps.</li>
+</ul>
+<hr>
+<h3 id="-conclusion">✅ <strong>Conclusion</strong></h3>
+<p>This work represents a major step toward <strong>predictive biocatalysis</strong>, reducing the time, cost, and risk associated with enzyme discovery and application. By bridging chemical and protein sequence space with data-driven models, the authors provide a scalable framework that can be extended to other enzyme families and reaction types, paving the way for broader adoption of biocatalysis in synthetic chemistry.</p>
+<h1 id="ai生物催化catnip与未来展望">AI+生物催化：CATNIP与未来展望</h1>
+<h2 id="一catnip核心研究总结">一、CATNIP核心研究总结</h2>
+<h3 id="研究背景">研究背景</h3>
+<ul>
+<li><strong>根本问题</strong>：化学空间（底物）与蛋白质序列空间（酶）之间的已知连接极少（&lt;0.3%）</li>
+<li><strong>现实困境</strong>：研究人员只能盲目筛选或局部探索，效率低下</li>
+</ul>
+<h3 id="解决方案三阶段数据驱动导航系统">解决方案：三阶段数据驱动&quot;导航系统&quot;</h3>
+<h4 id="第一阶段绘制地图---高通量实验">第一阶段：绘制地图 - 高通量实验</h4>
+<ol>
+<li>
+<p><strong>构建酶库 (akGLib1)</strong></p>
+<ul>
+<li>从26万+条序列中精选314条α-KG NHI酶</li>
+<li>平均相似度仅13.7%，确保序列多样性</li>
+<li>78%的酶成功在大肠杆菌中表达</li>
+</ul>
+</li>
+<li>
+<p><strong>大规模交叉测试</strong></p>
+<ul>
+<li>314种酶 × 111种结构多样底物</li>
+<li>96孔板高通量反应 + LC-MS快速检测</li>
+</ul>
+</li>
+<li>
+<p><strong>实验成果</strong></p>
+<ul>
+<li>发现<strong>215个</strong>全新&quot;酶-底物&quot;配对</li>
+<li>反应类型分布：
+<ul>
+<li>羟化：64%</li>
+<li>去饱和：18%</li>
+<li>其他：18%</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="第二阶段构建模型---机器学习">第二阶段：构建模型 - 机器学习</h4>
+<ol>
+<li>
+<p><strong>数据集构建</strong></p>
+<ul>
+<li>BioCatSet1 = 215个新反应 + 139个文献反应</li>
+</ul>
+</li>
+<li>
+<p><strong>双模型架构</strong></p>
+<ul>
+<li><strong>底物→酶模型</strong>：输入分子，推荐催化酶</li>
+<li><strong>酶→底物模型</strong>：输入序列，推荐催化底物</li>
+</ul>
+</li>
+<li>
+<p><strong>技术亮点</strong></p>
+<ul>
+<li>使用MORFEUS分子描述符量化化学空间</li>
+<li>序列相似性矩阵量化蛋白质空间</li>
+<li>梯度提升树(GBM) + YetiRank排序算法</li>
+<li><strong>预测命中率比随机筛选高4倍以上</strong></li>
+</ul>
+</li>
+</ol>
+<h4 id="第三阶段应用落地">第三阶段：应用落地</h4>
+<ul>
+<li><strong>CATNIP在线平台</strong>：用户友好的网页工具</li>
+<li><strong>功能</strong>：输入底物结构或酶序列，获得排名候选配对</li>
+</ul>
+<h4 id="验证案例">验证案例</h4>
+<table>
+  <thead>
+      <tr>
+          <th>底物</th>
+          <th>预测成功率</th>
+          <th>放大反应收率</th>
+          <th>重要发现</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Spartiene</td>
+          <td>7/10</td>
+          <td>35%</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>Matridine</td>
+          <td>7/10</td>
+          <td>50%</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td>类固醇底物</td>
+          <td>7/10</td>
+          <td>12%</td>
+          <td><strong>首次发现氧化烯烃断裂</strong></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="研究意义">研究意义</h3>
+<p>CATNIP建立了首个系统性连接化学空间与蛋白质序列空间的&quot;导航系统&quot;，显著降低了生物催化在有机合成中的应用风险。</p>
+<hr>
+<h2 id="二领域专家展望总结">二、领域专家展望总结</h2>
+<h3 id="当前应用与机遇">当前应用与机遇</h3>
+<h4 id="1-ml作为导航仪">1. ML作为&quot;导航仪&quot;</h4>
+<ul>
+<li>在&quot;蛋白质适应度景观&quot;中高效定向</li>
+<li>预测有害突变，加速酶定向进化</li>
+</ul>
+<h4 id="2-数据驱动的发现">2. 数据驱动的发现</h4>
+<ul>
+<li>从复杂数据中直接学习规律</li>
+<li>应用领域：
+<ul>
+<li>生成新型催化剂</li>
+<li>预测蛋白质稳定性</li>
+<li>蛋白语言模型应用</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-突破自然极限">3. 突破自然极限</h4>
+<ul>
+<li>生成式AI设计<strong>自然界不存在</strong>的全新酶功能</li>
+<li>超越传统的自然反应优化</li>
+</ul>
+<h3 id="主要挑战">主要挑战</h3>
+<h4 id="数据瓶颈">数据瓶颈</h4>
+<ul>
+<li><strong>问题</strong>：高质量、系统化实验数据不足</li>
+<li><strong>解决方案</strong>：
+<ul>
+<li>推动高通量实验</li>
+<li>采用&quot;零样本预测&quot;模型</li>
+<li>建立FAIR数据共享标准</li>
+</ul>
+</li>
+</ul>
+<h4 id="跨学科合作">跨学科合作</h4>
+<ul>
+<li>计算专家与实验科学家需要深度协作</li>
+</ul>
+<h3 id="未来展望">未来展望</h3>
+<h4 id="技术发展">技术发展</h4>
+<ol>
+<li>
+<p><strong>自动化闭环</strong></p>
+<ul>
+<li>ML指导的定向进化(MLDE)普及化</li>
+<li>低成本自动化实验平台</li>
+</ul>
+</li>
+<li>
+<p><strong>大规模数据库</strong></p>
+<ul>
+<li>ProteinGym等推动通用模型发展</li>
+</ul>
+</li>
+<li>
+<p><strong>新技术融合</strong></p>
+<ul>
+<li>蛋白质语言模型</li>
+<li>生成式AI（扩散模型）</li>
+<li>量子计算</li>
+</ul>
+</li>
+</ol>
+<h3 id="最终愿景">最终愿景</h3>
+<p><strong>&ldquo;数据 × 模型 × 自动化实验&rdquo;</strong> 闭环 + 跨学科合作 + 新一代AI工具 = <strong>创造能催化全新化学反应的人工酶</strong></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">Learn Latest AIDD</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/log/index.html"><a class="padding" href="/log/index.html">Log</a><ul id="R-subsections-23c22f75c84b98545748a65894702014" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-url="/blog/index.html"><a class="padding" href="/blog/index.html">Blogs</a><ul id="R-subsections-c061e150208a7ab43c1b0b723b79816b" class="collapsible-menu">
+            <li class="" data-nav-url="/blog/test/index.html"><a class="padding" href="/blog/test/index.html">De novo design of phospho-tyrosine peptide binders</a></li>
+            <li class="active " data-nav-url="/blog/my-first-post/index.html"><a class="padding" href="/blog/my-first-post/index.html">my first post</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1759561784" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1759561784" defer></script>
+    <script src="/js/theme.js?1759561784" defer></script>
+  </body>
+</html>
