@@ -2,25 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs :: Learn Latest AIDD</title>
-    <link>http://localhost:1313/blog/index.html</link>
+    <link>http://localhost:52716/blog/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 04 Oct 2025 15:00:28 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Oct 2025 20:21:10 +0800</lastBuildDate>
+    <atom:link href="http://localhost:52716/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>De novo design of phospho-tyrosine peptide binders</title>
-      <link>http://localhost:1313/blog/test/index.html</link>
-      <pubDate>Sat, 04 Oct 2025 15:00:28 +0800</pubDate>
-      <guid>http://localhost:1313/blog/test/index.html</guid>
+      <title>How Reinforcement Learning Unlocks Protein Design Potential</title>
+      <link>http://localhost:52716/blog/20251005/index.html</link>
+      <pubDate>Sun, 05 Oct 2025 20:21:10 +0800</pubDate>
+      <guid>http://localhost:52716/blog/20251005/index.html</guid>
       <description>daily summary of latest AIDD literature</description>
     </item>
     <item>
-      <title>my first post</title>
-      <link>http://localhost:1313/blog/my-first-post/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/my-first-post/index.html</guid>
-      <description>📄 Summary of the Paper Title: Connecting chemical and protein sequence space to predict biocatalytic reactions&#xA;Objective:&#xA;To enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.&#xA;Approach:&#xA;Library Construction (akGLib1):&#xA;Curated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation:</description>
+      <title>ProTrek: Trimodal AI Unlocks Advanced Protein Discovery</title>
+      <link>http://localhost:52716/blog/20251004/index.html</link>
+      <pubDate>Sat, 04 Oct 2025 21:21:12 +0800</pubDate>
+      <guid>http://localhost:52716/blog/20251004/index.html</guid>
+      <description>daily summary of latest AIDD literature</description>
+    </item>
+    <item>
+      <title>AI Designs First Phospho-Specific Protein Binders</title>
+      <link>http://localhost:52716/blog/20251003/index.html</link>
+      <pubDate>Sat, 04 Oct 2025 21:12:52 +0800</pubDate>
+      <guid>http://localhost:52716/blog/20251003/index.html</guid>
+      <description>daily summary of latest AIDD literature</description>
     </item>
   </channel>
 </rss>

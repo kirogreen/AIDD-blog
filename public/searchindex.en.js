@@ -12,8 +12,8 @@ var relearn_searchindex = [
     "content": "",
     "description": "",
     "tags": [],
-    "title": "Tag :: Antibody",
-    "uri": "/tags/antibody/index.html"
+    "title": "Tag :: Antibody Engineering",
+    "uri": "/tags/antibody-engineering/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD",
@@ -40,12 +40,50 @@ var relearn_searchindex = [
     "uri": "/tags/de-novo-design/index.html"
   },
   {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Fitness Landscape",
+    "uri": "/tags/fitness-landscape/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "content": "1. Summary Paper Title: From Supervision to Exploration: What Does Protein Language Model Learn During Reinforcement Learning?\nJournal: arXiv preprint\nPublish Date: October 2, 2025\nDOI: arXiv:2510.01571v1\nResearch Groups: The Chinese University of Hong Kong, Peking University, Stanford University, University of Pennsylvania, Nanjing University, National University of Singapore, University of Illinois Urbana-Champaign, Toyota Technological Institute at Chicago\nCentral Hypothesis: The study investigates whether reinforcement learning (RL)-enhanced protein language models (PLMs) can transcend their pre-training limitations and identify implicit sequence-structure-function relationships not explicitly encoded in foundational datasets. The researchers hypothesized that RL’s effectiveness is governed by a three-factor interaction: task difficulty, reward model accuracy, and policy capacity.\n2. Innovations Key Technical Innovations:\nThree-Factor Framework: Introduced a novel conceptual framework where RL effectiveness depends on the interaction between task difficulty (ruggedness of fitness landscape), reward accuracy (signal-to-noise ratio), and policy capacity (model size and representational power) Unified Evaluation Protocol: Developed comprehensive evaluation metrics including Expansion-Shrinkage Ratio (ESR) to quantify knowledge gain/loss during RL training Multi-Algorithm Comparison: Systematically compared three RL algorithms (DPO, PPO, GRPO) across diverse protein design tasks Support Metric Analysis: Introduced shrinkage, expansion, and preservation metrics to analyze how RL changes model capabilities Conceptual Innovations:\nBeyond Supervised Learning: Demonstrated that RL enables exploration beyond interpolation within existing sequence-function mappings Task-Dependent RL Efficacy: Showed that RL gains scale when rewards are accurate, policies have sufficient capacity, and tasks present headroom beyond supervised learning Exploration-Exploitation Tradeoff: Provided quantitative evidence of RL’s tendency to focus on high-reward regions at the cost of diversity 3. Applications Drug Discovery Applications:\nAntimicrobial Peptide Design: RL-enhanced models can discover novel AMPs with lower minimum inhibitory concentration (MIC) values, potentially leading to new antibiotics Antibody Optimization: Improved antibody binding affinity through targeted mutations in CDR regions, enabling development of more effective therapeutic antibodies Kinase Engineering: Optimization of enzyme activity for industrial and therapeutic applications through multi-step mutation strategies Biological Research Applications:\nProtein Inverse Folding: More efficient generation of sequences that fold into target structures, accelerating protein design experiments Fitness Landscape Exploration: Systematic exploration of protein sequence spaces to identify functional regions not accessible through supervised learning alone Multi-objective Optimization: Simultaneous optimization of multiple protein properties (e.g., stability, activity, specificity) through reward function design Specific Examples:\nGRPO algorithm discovered AMPs with several-fold higher activity than wild-type RL models achieved pass@k of 1.0 for antibody H3 and L1 sites, indicating perfect sampling efficiency Generated kinase variants with peak fitness scores of 133 compared to 70 for base models 4. Limitations \u0026 Future Work Acknowledged Limitations:\nDiversity Reduction: RL training often reduces sequence diversity as models focus on high-reward regions Reward Model Accuracy: Current reward models have limited accuracy (e.g., Spearman correlation of 0.47 for antibody binding affinity) Policy Capacity Constraints: Suboptimal policy model initialization limits exploration capabilities Task-Specific Challenges: Difficult tasks like antibody H1 and L3 optimization showed limited improvement (convergence to 0.67 pass@k) Future Directions:\nExtended Architectures: Apply framework to Diffusion/Flow Matching models and protein structure-sequence co-design Additional RL Algorithms: Explore Monte Carlo Tree Search (MCTS) and other RL approaches Improved Reward Models: Develop more accurate biological reward functions through better experimental integration Capacity Scaling: Investigate larger policy models to enhance exploration capabilities Real-time Experimental Integration: Incorporate experimental feedback directly into RL loops 5. Jargon Breakdown Protein Language Models (PLMs): AI models trained on protein sequences that learn patterns and relationships in protein data, similar to how ChatGPT understands human language but for proteins.\nReinforcement Learning (RL): A type of machine learning where an AI “agent” learns by trial and error, receiving “rewards” for good actions and “penalties” for bad ones, gradually improving its strategy.\nDirect Preference Optimization (DPO): A method that learns from examples of “good” and “bad” protein sequences without needing explicit scoring, like learning from before/after examples.\nPass@k Metric: Measures how often a model generates at least one good solution in k attempts - higher values mean better efficiency at finding working designs.\nFitness Landscape: A concept imagining protein sequences as a mountainous terrain where “higher” points represent better protein functions, and the challenge is finding the highest peaks.\nExpansion-Shrinkage Ratio (ESR): A score showing whether the model is learning new capabilities (ESR \u003e 1) or forgetting existing ones (ESR \u003c 1) during training.\nTM-Score: A measure of how similar a predicted protein structure is to the target structure, with higher scores indicating better matches.\n6. Connections Relationship to AIDD Field: This research represents a foundational advancement rather than an incremental improvement in AI-driven drug discovery (AIDD). It provides:\nNew Capabilities Enabled:\nSystematic RL Framework: Offers the first principled understanding of when and why RL works for protein design Quantitative Guidance: Provides practical metrics (ESR, support analysis) for evaluating RL effectiveness Exploration Beyond Training Data: Enables discovery of novel protein sequences not accessible through supervised learning alone Broader Impact:\nBridges NLP and Biology: Applies insights from language model RL fine-tuning to biological sequences Standardizes Evaluation: Introduces consistent metrics for comparing different RL approaches Informs Resource Allocation: Guides researchers on whether to prioritize reward model improvement, policy scaling, or algorithm selection Position in AIDD Landscape: This work establishes RL as a necessary complement to supervised learning in protein design, particularly for tasks requiring exploration beyond existing data. It moves the field from ad-hoc RL applications to a principled understanding of reinforcement learning’s capabilities and limitations in biological sequence design.",
+    "description": "daily summary of latest AIDD literature",
+    "tags": [
+      "Reinforcement Learning",
+      "Protein Language Models",
+      "Antibody Engineering",
+      "De Novo Design",
+      "Fitness Landscape"
+    ],
+    "title": "How Reinforcement Learning Unlocks Protein Design Potential",
+    "uri": "/blog/20251005/index.html"
+  },
+  {
     "breadcrumb": "Learn Latest AIDD \u003e Categories",
     "content": "",
     "description": "",
     "tags": [],
     "title": "Category :: Literature Review",
     "uri": "/categories/literature-review/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Protein Language Models",
+    "uri": "/tags/protein-language-models/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Reinforcement Learning",
+    "uri": "/tags/reinforcement-learning/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD",
@@ -56,39 +94,41 @@ var relearn_searchindex = [
     "uri": "/tags/index.html"
   },
   {
-    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
     "content": "",
     "description": "",
+    "tags": [],
+    "title": "Tag :: Protein Language Model",
+    "uri": "/tags/protein-language-model/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "content": "1. Summary A trimodal protein language model enables advanced protein searches. Nat Biotechnol. Published online October 2, 2025. doi:10.1038/s41587-025-02836-0\nResearch Group: Westlake University, Hong Kong University of Science and Technology, and independent researchers\nCentral Hypothesis/Goal: The researchers hypothesized that unifying protein sequence, structure, and natural language function descriptions into a single trimodal language model through contrastive learning would enable comprehensive protein searches across and within modalities, overcoming limitations of traditional single-modality tools and providing more accurate functional predictions.\n2. Innovations Technical Innovations:\nFirst trimodal architecture simultaneously processing sequence (via ESM-2), structure (via Foldseek tokenization + BERT), and natural language function (via PubMedBERT) Contrastive learning framework with eight loss functions (six intermodal alignment + two masked language modeling) Massive training dataset of ~40 million protein-text pairs (10× larger than previous models) Maximum inner-product search (MIPS) algorithm enabling billion-scale database searches in seconds Conceptual Innovations:\nMoves beyond homology-based searching to identify functionally similar proteins regardless of evolutionary relationship Enables natural language queries of protein databases (e.g., “find proteins that bind zinc ions”) Supports nine distinct search modalities (sequence↔structure, sequence↔function, structure↔function) Global representation learning overcomes local similarity constraints of traditional alignment tools 3. Applications Drug Discovery:\nIdentifying novel enzyme variants for therapeutic applications (e.g., discovering improved uracil DNA glycosylase variants for base editing) Finding functionally analogous proteins across species for drug target identification Rapid screening of metagenomic databases for novel bioactive compounds Biological Research:\nAnnotating the ~30% of UniProt proteins currently without functional annotations Identifying convergent evolution cases where different sequences/structures perform similar functions Generating hypotheses for experimental validation (as demonstrated with UDG variant discovery) Supporting protein engineering by finding functional templates for AI-designed sequences Specific Example: Researchers used ProTrek to identify novel uracil DNA glycosylase variants that showed higher editing efficiency and lower indel frequencies than existing thymine base editors (TSBE3EK and gTBE) when fused with spCas9n.\n4. Limitations \u0026 Future Work Acknowledged Limitations:\nUnderrepresentation of some protein families may limit fine-grained predictions Less sensitive to subtle sequence variations (similar to AlphaFold2 limitation) Cannot precisely predict specific quantitative values (e.g., fluorescence wavelengths, stability) without specialized fine-tuning Performance on de novo designed proteins may be limited due to training exclusively on natural proteins Future Directions:\nExpand to encompass entire global protein data (targeting 10 billion protein search capacity) Develop specialized versions for quantitative prediction tasks through fine-tuning Integrate with protein design pipelines for inverse folding tasks Enhance multimodal capabilities with additional data types (e.g., expression, interaction data) 5. Jargon Breakdown Trimodal Language Model: An AI system that can understand and process three different types of information (in this case: protein sequences, 3D structures, and text descriptions) in a unified way.\nContrastive Learning: A training technique where the model learns to bring similar things closer together and push different things apart in its internal representation space.\nMaximum Inner-Product Search (MIPS): A fast algorithm for finding the most similar items in huge databases by calculating mathematical similarities between their numerical representations.\nConvergent Evolution: When different proteins evolve independently to perform similar functions, despite having different sequences and structures.\nHomology-based Searching: The traditional method of finding similar proteins by looking for evolutionary relationships and sequence similarities.\n3Di Sequences: A way of representing protein 3D structures as text-like sequences that can be processed by language models.\n6. Connections Relation to AIDD: ProTrek represents a significant advancement in AI-driven drug discovery by enabling functional protein searching at unprecedented scale and cross-modal flexibility. It bridges the gap between traditional bioinformatics tools and modern natural language processing.\nCapability Assessment: This is not merely an incremental improvement but enables fundamentally new capabilities:\nNatural language querying of protein databases Identification of functionally similar proteins without sequence/structure homology Unified search across sequence, structure, and function modalities Rapid screening of billion-scale protein databases The model serves as both a specialized tool for protein discovery and a general-purpose foundation for downstream AIDD applications, potentially accelerating target identification, lead optimization, and protein engineering pipelines.",
+    "description": "daily summary of latest AIDD literature",
+    "tags": [
+      "Protein Language Model"
+    ],
+    "title": "ProTrek: Trimodal AI Unlocks Advanced Protein Discovery",
+    "uri": "/blog/20251004/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "content": "1. Summary Paper Title: De novo design of phospho-tyrosine peptide binders\nJournal: bioRxiv (preprint)\nPublish Date: September 30, 2025\nDOI: https://doi.org/10.1101/2025.09.29.678898\nResearch Group/Institution: Institute for Protein Design, University of Washington (Baker Lab)\nCentral Hypothesis/Goal: The researchers hypothesized that their previously developed RoseTTAFold Diffusion 2 (RFD2) framework could be extended to design protein binders that specifically recognize phosphorylated tyrosine (pY) residues in unstructured peptide regions, addressing a major gap in our ability to probe phosphorylation-dependent signaling pathways.\n2. Innovations Key Technical Innovations:\nDevelopment of RFD2 for Molecular Interfaces (RFD2-MI): A specialized version of RFD2 trained on interface-focused datasets with enhanced conditioning capabilities 1D feature conditioning: Incorporation of per-residue features (hotspot masks, secondary structure, solvent accessibility) that guide interface formation during diffusion All-atom diffusion framework: Simultaneous generation of binder backbone and target peptide coordinates with atomic precision Integration with Logos pipeline: Combined approach for designing binders to both structured and disordered regions Conceptual Innovations:\nFirst general framework for designing binders to post-translationally modified proteins (specifically phosphorylated targets) Ability to design specificity for both phosphorylation state AND flanking sequence context (dual specificity) Demonstration that de novo designed proteins can achieve specificity rivaling or exceeding natural binding domains (SH2 domains) 3. Applications Real-World Applications:\nCancer Research \u0026 Therapeutics:\nTargeted inhibition of oncogenic signaling: Designed binders for EGFR pY1068 and pY1173 could disrupt growth factor signaling in cancers Immune modulation: CD3ε pY188 binders could potentially modulate T-cell activation for immunotherapy applications Diabetes Research:\nINSR pY1361 binders could help study insulin receptor signaling dynamics and develop new diabetes therapeutics Basic Research Tools:\nPhosphorylation-specific biosensors for live-cell imaging of signaling events Precision tools for mapping phosphorylation dynamics in specific pathways Reagents that distinguish between closely related phosphosites (overcoming antibody limitations) Drug Discovery:\nStarting points for developing small molecule inhibitors targeting phosphorylation-dependent interactions Modular components for PROTACs or other targeted degradation approaches 4. Limitations \u0026 Future Work Acknowledged Limitations:\nLow success rates (\u003c0.1% of designs were functional binders) Modest binding affinities (best Kd ~577 nM, most in micromolar range) Greater challenge achieving phosphorylation specificity versus sequence specificity Computational expense of the design pipeline Suggested Future Directions:\nOptimize phosphate interaction design to improve affinity and specificity Extend approach to other PTMs (methylation, acetylation, glycosylation) Incorporate multi-modal training data (chemical, structural, dynamic information) Improve success rates through better modeling of desolvation penalties Develop binders that function inside living cells Apply to broader range of therapeutic targets 5. Jargon Breakdown Phosphorylation: A chemical modification where a phosphate group is added to proteins (often to tyrosine, serine, or threonine residues), acting like a molecular switch that turns proteins on/off.\nDe novo design: Creating entirely new protein structures from scratch (not based on existing natural proteins).\nDiffusion model: A type of AI that learns to generate structures by reversing a process of adding noise (similar to how AI image generators work, but for 3D molecular structures).\nPost-translational modification (PTM): Chemical changes to proteins after they’re made by the cell, including phosphorylation, methylation, acetylation, etc.\nHotspot mask: A computational guide that tells the AI which parts of the target are most important for binding.\nBiolayer interferometry (BLI): A technique that measures how strongly two molecules bind together by detecting changes in light interference patterns.\nKd (Dissociation constant): A measure of binding strength - lower numbers mean tighter binding (nM is better than μM).\n6. Connections to AIDD Relationship to AIDD Field: This work represents a significant capability expansion rather than an incremental improvement. While previous AI-driven drug discovery (AIDD) methods could design binders to unmodified proteins, this is the first general approach for designing binders to post-translationally modified targets.\nNew Capabilities Enabled:\nAccess to “undruggable” targets: Many phosphorylation sites occur in disordered regions that lack structured pockets for conventional drug binding Precision targeting: Ability to distinguish between different phosphorylation states of the same protein Novel scaffold generation: Not limited to antibody architectures or natural binding domains Broader Impact: This work bridges the gap between structure-based drug design and PTM biology, enabling systematic targeting of modified protein states that are critical in disease but previously difficult to address. It demonstrates how AI methods can tackle challenges that have resisted conventional approaches, potentially opening up new target classes for therapeutic intervention.",
+    "description": "daily summary of latest AIDD literature",
     "tags": [
       "Antibody",
       "De Novo Design"
     ],
-    "title": "Test1",
-    "uri": "/blog/test1/index.html"
+    "title": "AI Designs First Phospho-Specific Protein Binders",
+    "uri": "/blog/20251003/index.html"
   },
   {
-    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "Test",
-    "uri": "/blog/test/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "New",
-    "uri": "/blog/new/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
-    "content": "📄 Summary of the Paper\nTitle: Connecting chemical and protein sequence space to predict biocatalytic reactions\nObjective: To enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.\nApproach:\nLibrary Construction (akGLib1): Curated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation: Screened 111 diverse substrates against the enzyme library in a 96-well plate format. Discovered 215 new biocatalytic reactions, including hydroxylation, desaturation, and oxidative cleavage. 38% of enzymes and 32% of substrates showed activity, including complex natural products and pharmaceuticals. Machine Learning Model Development: Combined new and literature data into BioCatSet1 (354 reactions). Built two gradient-boosted machine learning models: Substrate-to-enzyme: Predicts which enzymes are likely to react with a given substrate. Enzyme-to-substrate: Predicts which substrates a given enzyme is likely to transform. Used chemical descriptors (MORFEUS) and sequence similarity (SSN) as inputs. CATNIP Web Tool: Developed an open-access web platform (CATNIP) that allows users to input a substrate or enzyme sequence and receive ranked predictions for compatible partners. Validated predictions experimentally with high success rates (e.g., 7 out of 10 predicted enzymes converted sparteine). 💡 Key Innovations\nFirst Large-Scale Mapping of chemical and protein sequence space for a mechanistically diverse enzyme family. Integration of High-Throughput Experimentation with Machine Learning to generate a robust, experimentally validated dataset. Dual-Purpose Predictive Models that work in both directions: from substrate to enzyme and vice versa. CATNIP Platform: A user-friendly, open-access tool that democratizes biocatalytic reaction prediction. High Success Rate: Demonstrated predictive power with real-world substrates and enzymes, including previously uncharacterized ones. 🧪 Possible Applications\nDrug Discovery \u0026 Pharmaceutical Synthesis: Accelerate the development of biocatalytic routes for complex molecules. Green Chemistry: Enable more sustainable synthesis pathways using enzymes. Enzyme Engineering: Guide protein engineering by identifying promising starting points. Metabolic Engineering \u0026 Natural Product Biosynthesis: Predict and design pathways for producing valuable compounds. Educational \u0026 Industrial Use: CATNIP can be used in academic and industrial R\u0026D to quickly identify viable biocatalytic steps. ✅ Conclusion\nThis work represents a major step toward predictive biocatalysis, reducing the time, cost, and risk associated with enzyme discovery and application. By bridging chemical and protein sequence space with data-driven models, the authors provide a scalable framework that can be extended to other enzyme families and reaction types, paving the way for broader adoption of biocatalysis in synthetic chemistry.",
-    "description": "📄 Summary of the Paper\nTitle: Connecting chemical and protein sequence space to predict biocatalytic reactions\nObjective: To enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.\nApproach:\nLibrary Construction (akGLib1): Curated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation: Screened 111 diverse substrates against the enzyme library in a 96-well plate format. Discovered 215 new biocatalytic reactions, including hydroxylation, desaturation, and oxidative cleavage. 38% of enzymes and 32% of substrates showed activity, including complex natural products and pharmaceuticals. Machine Learning Model Development: Combined new and literature data into BioCatSet1 (354 reactions). Built two gradient-boosted machine learning models: Substrate-to-enzyme: Predicts which enzymes are likely to react with a given substrate. Enzyme-to-substrate: Predicts which substrates a given enzyme is likely to transform. Used chemical descriptors (MORFEUS) and sequence similarity (SSN) as inputs. CATNIP Web Tool: Developed an open-access web platform (CATNIP) that allows users to input a substrate or enzyme sequence and receive ranked predictions for compatible partners. Validated predictions experimentally with high success rates (e.g., 7 out of 10 predicted enzymes converted sparteine). 💡 Key Innovations",
-    "tags": [],
-    "title": "My Forth Post",
-    "uri": "/blog/my-forth-post/index.html"
+    "title": "Tag :: Antibody",
+    "uri": "/tags/antibody/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Log",
@@ -113,57 +153,5 @@ var relearn_searchindex = [
     "tags": [],
     "title": "First Day",
     "uri": "/log/first-day/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
-    "content": "Hugo is a fast and modern static site generator written in Go. In this post, I’ll show you how to create your first blog post.\nWhy Choose Hugo? Blazing fast build times Simple markdown-based content Flexible templating system Great for blogs and documentation Creating Your First Post To create a new blog post, run:",
-    "description": "Learn how to create your first blog post with Hugo static site generator",
-    "tags": [
-      "Hugo",
-      "Static-Site",
-      "Tutorial"
-    ],
-    "title": "Getting Started with Hugo",
-    "uri": "/blog/my-second-post/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: Hugo",
-    "uri": "/tags/hugo/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: Static-Site",
-    "uri": "/tags/static-site/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: Tutorial",
-    "uri": "/tags/tutorial/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Categories",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Category :: Web Development",
-    "uri": "/categories/web-development/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
-    "content": "📄 Summary of the Paper Title: Connecting chemical and protein sequence space to predict biocatalytic reactions\nObjective:\nTo enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.\nApproach:\nLibrary Construction (akGLib1):\nCurated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation:\nScreened 111 diverse substrates against the enzyme library in a 96-well plate format. Discovered 215 new biocatalytic reactions, including hydroxylation, desaturation, and oxidative cleavage. 38% of enzymes and 32% of substrates showed activity, including complex natural products and pharmaceuticals. Machine Learning Model Development:\nCombined new and literature data into BioCatSet1 (354 reactions). Built two gradient-boosted machine learning models: Substrate-to-enzyme: Predicts which enzymes are likely to react with a given substrate. Enzyme-to-substrate: Predicts which substrates a given enzyme is likely to transform. Used chemical descriptors (MORFEUS) and sequence similarity (SSN) as inputs. CATNIP Web Tool:\nDeveloped an open-access web platform (CATNIP) that allows users to input a substrate or enzyme sequence and receive ranked predictions for compatible partners. Validated predictions experimentally with high success rates (e.g., 7 out of 10 predicted enzymes converted sparteine). 💡 Key Innovations First Large-Scale Mapping of chemical and protein sequence space for a mechanistically diverse enzyme family. Integration of High-Throughput Experimentation with Machine Learning to generate a robust, experimentally validated dataset. Dual-Purpose Predictive Models that work in both directions: from substrate to enzyme and vice versa. CATNIP Platform: A user-friendly, open-access tool that democratizes biocatalytic reaction prediction. High Success Rate: Demonstrated predictive power with real-world substrates and enzymes, including previously uncharacterized ones. 🧪 Possible Applications Drug Discovery \u0026 Pharmaceutical Synthesis: Accelerate the development of biocatalytic routes for complex molecules. Green Chemistry: Enable more sustainable synthesis pathways using enzymes. Enzyme Engineering: Guide protein engineering by identifying promising starting points. Metabolic Engineering \u0026 Natural Product Biosynthesis: Predict and design pathways for producing valuable compounds. Educational \u0026 Industrial Use: CATNIP can be used in academic and industrial R\u0026D to quickly identify viable biocatalytic steps. ✅ Conclusion This work represents a major step toward predictive biocatalysis, reducing the time, cost, and risk associated with enzyme discovery and application. By bridging chemical and protein sequence space with data-driven models, the authors provide a scalable framework that can be extended to other enzyme families and reaction types, paving the way for broader adoption of biocatalysis in synthetic chemistry.\nAI+生物催化：CATNIP与未来展望 一、CATNIP核心研究总结 研究背景 根本问题：化学空间（底物）与蛋白质序列空间（酶）之间的已知连接极少（\u003c0.3%） 现实困境：研究人员只能盲目筛选或局部探索，效率低下 解决方案：三阶段数据驱动\"导航系统\" 第一阶段：绘制地图 - 高通量实验 构建酶库 (akGLib1)\n从26万+条序列中精选314条α-KG NHI酶 平均相似度仅13.7%，确保序列多样性 78%的酶成功在大肠杆菌中表达 大规模交叉测试\n314种酶 × 111种结构多样底物 96孔板高通量反应 + LC-MS快速检测 实验成果\n发现215个全新\"酶-底物\"配对 反应类型分布： 羟化：64% 去饱和：18% 其他：18% 第二阶段：构建模型 - 机器学习 数据集构建\nBioCatSet1 = 215个新反应 + 139个文献反应 双模型架构\n底物→酶模型：输入分子，推荐催化酶 酶→底物模型：输入序列，推荐催化底物 技术亮点\n使用MORFEUS分子描述符量化化学空间 序列相似性矩阵量化蛋白质空间 梯度提升树(GBM) + YetiRank排序算法 预测命中率比随机筛选高4倍以上 第三阶段：应用落地 CATNIP在线平台：用户友好的网页工具 功能：输入底物结构或酶序列，获得排名候选配对 验证案例 底物 预测成功率 放大反应收率 重要发现 Spartiene 7/10 35% - Matridine 7/10 50% - 类固醇底物 7/10 12% 首次发现氧化烯烃断裂 研究意义 CATNIP建立了首个系统性连接化学空间与蛋白质序列空间的\"导航系统\"，显著降低了生物催化在有机合成中的应用风险。\n二、领域专家展望总结 当前应用与机遇 1. ML作为\"导航仪\" 在\"蛋白质适应度景观\"中高效定向 预测有害突变，加速酶定向进化 2. 数据驱动的发现 从复杂数据中直接学习规律 应用领域： 生成新型催化剂 预测蛋白质稳定性 蛋白语言模型应用 3. 突破自然极限 生成式AI设计自然界不存在的全新酶功能 超越传统的自然反应优化 主要挑战 数据瓶颈 问题：高质量、系统化实验数据不足 解决方案： 推动高通量实验 采用\"零样本预测\"模型 建立FAIR数据共享标准 跨学科合作 计算专家与实验科学家需要深度协作 未来展望 技术发展 自动化闭环\nML指导的定向进化(MLDE)普及化 低成本自动化实验平台 大规模数据库\nProteinGym等推动通用模型发展 新技术融合\n蛋白质语言模型 生成式AI（扩散模型） 量子计算 最终愿景 “数据 × 模型 × 自动化实验” 闭环 + 跨学科合作 + 新一代AI工具 = 创造能催化全新化学反应的人工酶",
-    "description": "📄 Summary of the Paper Title: Connecting chemical and protein sequence space to predict biocatalytic reactions\nObjective:\nTo enable the prediction of compatible enzyme-substrate pairs for biocatalytic reactions, reducing reliance on trial-and-error experimentation.\nApproach:\nLibrary Construction (akGLib1):\nCurated a diverse library of 314 α-KG-dependent NHI enzymes from over 265,000 sequences using bioinformatics tools (e.g., EFI-EST, sequence similarity networks). Ensured high sequence diversity (average identity: 13.7%) and included both characterized and uncharacterized enzymes. High-Throughput Experimentation:",
-    "tags": [],
-    "title": "my first post",
-    "uri": "/blog/my-first-post/index.html"
   }
 ]
