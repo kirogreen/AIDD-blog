@@ -2,59 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags :: Learn Latest AIDD</title>
-    <link>http://localhost:52716/tags/index.html</link>
+    <link>http://localhost:1313/tags/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Oct 2025 20:21:10 +0800</lastBuildDate>
-    <atom:link href="http://localhost:52716/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Oct 2025 22:22:42 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tag :: Antibody Engineering</title>
-      <link>http://localhost:52716/tags/antibody-engineering/index.html</link>
-      <pubDate>Sun, 05 Oct 2025 20:21:10 +0800</pubDate>
-      <guid>http://localhost:52716/tags/antibody-engineering/index.html</guid>
+      <link>http://localhost:1313/tags/antibody-engineering/index.html</link>
+      <pubDate>Mon, 06 Oct 2025 22:22:42 +0800</pubDate>
+      <guid>http://localhost:1313/tags/antibody-engineering/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: De Novo Design</title>
-      <link>http://localhost:52716/tags/de-novo-design/index.html</link>
-      <pubDate>Sun, 05 Oct 2025 20:21:10 +0800</pubDate>
-      <guid>http://localhost:52716/tags/de-novo-design/index.html</guid>
+      <link>http://localhost:1313/tags/de-novo-design/index.html</link>
+      <pubDate>Mon, 06 Oct 2025 22:22:42 +0800</pubDate>
+      <guid>http://localhost:1313/tags/de-novo-design/index.html</guid>
       <description></description>
     </item>
     <item>
-      <title>Tag :: Fitness Landscape</title>
-      <link>http://localhost:52716/tags/fitness-landscape/index.html</link>
-      <pubDate>Sun, 05 Oct 2025 20:21:10 +0800</pubDate>
-      <guid>http://localhost:52716/tags/fitness-landscape/index.html</guid>
+      <title>Tag :: Direct Preference Optimization</title>
+      <link>http://localhost:1313/tags/direct-preference-optimization/index.html</link>
+      <pubDate>Mon, 06 Oct 2025 22:22:42 +0800</pubDate>
+      <guid>http://localhost:1313/tags/direct-preference-optimization/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Protein Language Models</title>
-      <link>http://localhost:52716/tags/protein-language-models/index.html</link>
-      <pubDate>Sun, 05 Oct 2025 20:21:10 +0800</pubDate>
-      <guid>http://localhost:52716/tags/protein-language-models/index.html</guid>
+      <link>http://localhost:1313/tags/protein-language-models/index.html</link>
+      <pubDate>Mon, 06 Oct 2025 22:22:42 +0800</pubDate>
+      <guid>http://localhost:1313/tags/protein-language-models/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Reinforcement Learning</title>
-      <link>http://localhost:52716/tags/reinforcement-learning/index.html</link>
+      <link>http://localhost:1313/tags/reinforcement-learning/index.html</link>
+      <pubDate>Mon, 06 Oct 2025 22:22:42 +0800</pubDate>
+      <guid>http://localhost:1313/tags/reinforcement-learning/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Fitness Landscape</title>
+      <link>http://localhost:1313/tags/fitness-landscape/index.html</link>
       <pubDate>Sun, 05 Oct 2025 20:21:10 +0800</pubDate>
-      <guid>http://localhost:52716/tags/reinforcement-learning/index.html</guid>
+      <guid>http://localhost:1313/tags/fitness-landscape/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Protein Language Model</title>
-      <link>http://localhost:52716/tags/protein-language-model/index.html</link>
+      <link>http://localhost:1313/tags/protein-language-model/index.html</link>
       <pubDate>Sat, 04 Oct 2025 21:21:12 +0800</pubDate>
-      <guid>http://localhost:52716/tags/protein-language-model/index.html</guid>
+      <guid>http://localhost:1313/tags/protein-language-model/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Antibody</title>
-      <link>http://localhost:52716/tags/antibody/index.html</link>
+      <link>http://localhost:1313/tags/antibody/index.html</link>
       <pubDate>Sat, 04 Oct 2025 21:12:52 +0800</pubDate>
-      <guid>http://localhost:52716/tags/antibody/index.html</guid>
+      <guid>http://localhost:1313/tags/antibody/index.html</guid>
       <description></description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fitness Landscape :: Tag :: Learn Latest AIDD</title>
-    <link>http://localhost:52716/tags/fitness-landscape/index.html</link>
+    <link>http://localhost:1313/tags/fitness-landscape/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 05 Oct 2025 20:21:10 +0800</lastBuildDate>
-    <atom:link href="http://localhost:52716/tags/fitness-landscape/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/fitness-landscape/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Reinforcement Learning Unlocks Protein Design Potential</title>
-      <link>http://localhost:52716/blog/20251005/index.html</link>
+      <link>http://localhost:1313/blog/20251005/index.html</link>
       <pubDate>Sun, 05 Oct 2025 20:21:10 +0800</pubDate>
-      <guid>http://localhost:52716/blog/20251005/index.html</guid>
+      <guid>http://localhost:1313/blog/20251005/index.html</guid>
       <description>daily summary of latest AIDD literature</description>
     </item>
   </channel>
