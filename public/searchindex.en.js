@@ -1,13 +1,5 @@
 var relearn_searchindex = [
   {
-    "breadcrumb": "Learn Latest AIDD \u003e Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: Antibody Engineering",
-    "uri": "/tags/antibody-engineering/index.html"
-  },
-  {
     "breadcrumb": "Learn Latest AIDD",
     "content": "",
     "description": "",
@@ -32,12 +24,34 @@ var relearn_searchindex = [
     "uri": "/tags/de-novo-design/index.html"
   },
   {
+    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "content": "1. Summary: Title: De novo design of RNA and nucleoprotein complexes\nJournal: bioRxiv (preprint)\nPublication Date: October 2, 2025\nDOI: https://doi.org/10.1101/2025.10.01.679929\nPrimary Research Institution: University of Washington, Institute for Protein Design\nAbstract: This study introduces RFDpoly, a generative diffusion framework for de novo design of RNA, DNA, and protein structures. The authors demonstrate the ability to design novel RNA folds and nucleoprotein complexes, validated experimentally through SHAPE-seq, electron microscopy, and crystallography. This work extends protein design principles to nucleic acids, enabling creation of diverse biomolecular architectures.\n2. Background: The core scientific problem addressed is the lack of robust methods for de novo design of nucleic acid tertiary structures and protein-nucleic acid complexes. While significant advances have been made in protein design, nucleic acid design has been limited to three main approaches: (1) structure-independent aptamer generation, (2) secondary structure-based design without 3D geometry consideration, and (3) geometrically constrained origami methods that rely on rigid assumptions. Prior challenges included inability to capture native-like RNA complexity (multi-angled junctions, bulges, bent helices), limited structural diversity in generated designs, and absence of experimental validation for computational approaches.\n3. Research Methodology: The technical roadmap involves a two-step process:\nBackbone generation using RFDpoly, an extension of RFdiffusion that:\nDenoises frame rotations and translations while predicting torsion angles Uses polymer-class conditioning (RNA/DNA/protein) through RoseTTAfold’s 1D track Incorporates base-pair conditioning through 2D templates for secondary structure control Handles multi-polymer generation with symmetric noise propagation Sequence design using either:\nNA-MPNN (nucleic acid version of ProteinMPNN) followed by PyRosetta repacking Autoregressive sequence-structure co-design during denoising The authors validated designs through:\nSHAPE-seq for secondary structure validation Negative stain and cryo-EM for tertiary structure characterization Crystallography for atomic-level validation Yeast display binding assays for protein-DNA interactions 4. Innovations: Key innovations include:\nGeneralized biopolymer design: First framework capable of designing RNA, DNA, and protein structures within a unified architecture Advanced conditioning: Base-pair templating with explicit control over pairing patterns, orientations, and pseudoknot topologies Full-atom generation: Torsion angle prediction enabling complete backbone construction without post-processing Hierarchical design: 2D motif templating allowing scaffolding of pre-characterized components into larger assemblies Experimental validation: Comprehensive validation across multiple techniques demonstrating physical accuracy 5. Applications: The findings enable numerous applications in drug discovery and biological research:\nRNA therapeutics: Design of stable RNA structures for siRNA, mRNA vaccines, and RNA-based therapeutics Biosensors: Creation of RNA-based sensors and riboswitches for diagnostic applications Gene regulation: Design of synthetic RNA regulators for controlling gene expression Nanotechnology: Construction of complex nucleoprotein assemblies for nanoscale devices Structural biology: Generation of novel RNA folds for studying structure-function relationships Specific examples from the paper include:\nDesigned RNA pseudocycles with novel folds validated by cryo-EM Protein-DNA complexes with nanomolar binding affinity Successful participation in Eterna OpenKnot challenges with improved folding over natural sequences 6. Limitations \u0026 Future Work: The authors acknowledge several limitations:\nPrediction reliability: Need for more reliable tertiary structure prediction methods for protein-nucleic acid assemblies Interface design: Limited capability for designing compact, partner-specific protein-RNA interfaces Chemical diversity: Lack of incorporation of noncanonical nucleotides and post-synthetic modifications Dataset size: Relatively small training dataset of experimentally determined RNA structures Future directions suggested:\nDevelopment of RNA-centric scaffolds for hierarchical assembly Incorporation of small-molecule ligands and chemical modifications Expansion to more diverse nucleic acid geometries and functions Integration with experimental characterization pipelines 7. Jargon Breakdown: Diffusion models: Generative AI approach that learns to denoise structures from random noise. Important for creating diverse, novel structures. Example: RFDpoly starts from random noise and gradually builds structured RNA backbones.\nBase-pair templating: Method to specify desired base-pairing patterns during generation. Important for controlling secondary and tertiary structure. Example: Providing dot-bracket notation to generate specific pseudoknot topologies.\nSHAPE-seq: Selective 2’-hydroxyl acylation analyzed by primer extension sequencing. Important for experimental validation of RNA secondary structure. Example: Measuring nucleotide flexibility to distinguish paired vs. unpaired regions.\nMotif scaffolding: Approach to incorporate known structural motifs into larger designs. Important for hierarchical design and reusing validated components. Example: Embedding DNA-binding proteins into larger nucleoprotein assemblies.\nTM-score: Metric for measuring structural similarity (0-1 scale). Important for assessing design quality. Example: Comparing designed structures to predicted folds with TM-score \u003e0.5 indicating good agreement.\n8. Connections: This paper represents a transformative capability rather than an incremental improvement in AIDD. It bridges two previously separate fields: protein design and nucleic acid design, enabling truly integrated biomolecular design. The work extends the success of diffusion-based protein design (RFdiffusion) to nucleic acids, creating the first generalized framework for multi-polymer design. This enables entirely new classes of biomolecules that were previously inaccessible to computational design, particularly complex RNA structures and protein-nucleic acid hybrids with precise geometric control.\nThe method presented in this paper has been open-sourced. The authors state that code and weights for RFDpoly will be made available on GitHub at the time of publication, along with tutorial notebooks for all design campaigns described.",
+    "description": "daily summary of latest AIDD literature",
+    "tags": [
+      "De Novo Design",
+      "RNA Design",
+      "Diffusion Models",
+      "Nucleic Acid-Protein Complexes",
+      "Generative AI"
+    ],
+    "title": "Diffusion Model RFDpoly Enables De Novo RNA and Nucleoprotein Design",
+    "uri": "/blog/20251006/index.html"
+  },
+  {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "Tag :: Direct Preference Optimization",
-    "uri": "/tags/direct-preference-optimization/index.html"
+    "title": "Tag :: Diffusion Models",
+    "uri": "/tags/diffusion-models/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Generative AI",
+    "uri": "/tags/generative-ai/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Categories",
@@ -52,16 +66,16 @@ var relearn_searchindex = [
     "content": "",
     "description": "",
     "tags": [],
-    "title": "Tag :: Protein Language Models",
-    "uri": "/tags/protein-language-models/index.html"
+    "title": "Tag :: Nucleic Acid-Protein Complexes",
+    "uri": "/tags/nucleic-acid-protein-complexes/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "Tag :: Reinforcement Learning",
-    "uri": "/tags/reinforcement-learning/index.html"
+    "title": "Tag :: RNA Design",
+    "uri": "/tags/rna-design/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD",
@@ -72,18 +86,12 @@ var relearn_searchindex = [
     "uri": "/tags/index.html"
   },
   {
-    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
-    "content": "1. Summary Original Title: From Supervision to Exploration: What Does Protein Language Model Learn During Reinforcement Learning? Journal: arXiv preprint Publication Date: October 2, 2025 DOI: arXiv:2510.01571v1 Primary Research Group/Institution: Multi-institutional collaboration led by The Chinese University of Hong Kong, Peking University, and Stanford University.\nThis study systematically investigates whether reinforcement learning (RL) can help protein language models (PLMs) discover novel sequence-function relationships beyond their pre-training data. Through experiments across four protein design domains (antimicrobial peptide design, kinase optimization, antibody engineering, and inverse folding), the authors demonstrate that RL improves sampling efficiency but its effectiveness depends on a three-factor interaction: task difficulty, reward model accuracy, and policy capacity.\n2. Background The core scientific problem addresses the fundamental limitations of supervised learning approaches in protein design. Traditional methods struggle with: 1) optimizing complex non-differentiable biological objectives, 2) exploring beyond existing sequence-function mappings, and 3) integrating multi-objective criteria or experimental feedback. While protein language models have shown remarkable success through pre-training, they remain constrained by their training distributions. Reinforcement learning has demonstrated transformative potential in NLP by enabling models to discover emergent capabilities, but its capacity to unlock latent functional patterns in protein space remained underexplored.\n3. Research Methodology The authors employed a comprehensive evaluation framework across four biological systems:\nProtein Inverse Folding: Used InstructPLM-7B as policy model with TM-Score as reward, implementing DPO with regularization Antimicrobial Peptide Design: Employed Amphion-SFT with ApexMIC reward predictor, testing DPO, PPO, and GRPO algorithms Kinase Mutation: Utilized ESM-2 architecture for multi-step mutations with experimental fitness as reward Antibody Optimization: Developed improved ProtAttBA model for binding affinity prediction, using PPO and GRPO The technical approach involved:\nSystematic comparison of RL algorithms (DPO, PPO, GRPO) Introduction of Expansion-Shrinkage Ratio (ESR) metric to quantify knowledge gain/loss Comprehensive evaluation using Pass@k metrics and biological plausibility measures Latent space analysis through UMAP visualizations 4. Innovations Key innovations compared to previous state-of-the-art:\nThree-Factor Framework: First principled framework identifying that RL effectiveness depends on task difficulty, reward accuracy, and policy capacity interaction Expansion-Shrinkage Ratio (ESR): Novel metric to quantify the trade-off between discovering new solutions and forgetting previous knowledge during RL fine-tuning Systematic Cross-Domain Evaluation: First comprehensive study comparing RL effects across multiple protein design tasks using consistent evaluation metrics Improved Reward Modeling: Enhanced antibody binding affinity prediction with combined regression and MLM objectives Task-Specific Algorithm Guidance: Evidence-based recommendations for which RL algorithms work best for different protein design challenges 5. Applications Real-world applications in drug discovery and biological research:\nAccelerated Antibody Optimization: More efficient generation of high-affinity antibody variants for therapeutic development, particularly for cancer and infectious diseases Novel Antimicrobial Peptide Discovery: Design of more potent AMPs to address antibiotic resistance crisis Enzyme Engineering: Optimization of kinase and other enzyme properties for industrial biocatalysis and therapeutic applications De Novo Protein Design: Improved inverse folding for creating proteins with novel functions not found in nature Experimental-Guided Design: Framework for incorporating experimental feedback into computational design pipelines 6. Limitations \u0026 Future Work Acknowledged limitations:\nRL often reduces diversity and novelty while improving specificity Performance heavily dependent on reward model accuracy (e.g., Spearman=0.47 for antibody task) ESR \u003c 1.0 in many cases indicates net knowledge loss during fine-tuning Computationally intensive requiring significant resources Suggested future directions:\nExtend to Diffusion/Flow Matching architectures beyond PLMs Explore protein structure and sequence-structure co-design Incorporate additional RL algorithms (e.g., MCTS) Improve reward model accuracy and robustness Develop better regularization techniques to maintain diversity 7. Jargon Breakdown Protein Language Models (PLMs): AI models trained on protein sequences to understand and generate biologically plausible proteins. Example: ESM-2 or ProtGPT2 that can predict protein function or generate novel sequences.\nReinforcement Learning (RL): Machine learning approach where an agent learns to make decisions by receiving rewards or penalties. Example: Training a model to generate better antibodies by rewarding improved binding affinity.\nDirect Preference Optimization (DPO): RL technique that learns from preference pairs without explicit reward modeling. Example: Showing the model pairs of proteins where one has better activity and learning to prefer it.\nPass@k: Evaluation metric measuring the probability of generating at least one successful sequence in k attempts. Example: Pass@100 = 0.8 means 80% chance of getting a good protein in 100 tries.\nTM-Score: Metric for assessing structural similarity between proteins (1.0 = perfect match). Example: Used to evaluate how well a generated sequence folds into the target structure.\n8. Connections This paper provides a significant incremental improvement to the AIDD field by offering a principled framework for applying RL to protein design. It doesn’t enable fundamentally new capabilities but provides crucial insights into how to effectively use existing RL techniques with PLMs. The research connects to broader AIDD by:\nEstablishing guidelines for when and how to apply RL in protein design pipelines Providing diagnostic tools (like ESR) to evaluate RL training effectiveness Demonstrating the importance of reward model quality in biological applications Offering practical guidance for resource allocation in RL-based protein engineering 9. Note The method presented in this paper has been open-sourced. Implementation is available at github (specific repository URL not provided in the document).",
-    "description": "daily summary of latest AIDD literature",
-    "tags": [
-      "Reinforcement Learning",
-      "Protein Language Models",
-      "Antibody Engineering",
-      "De Novo Design",
-      "Direct Preference Optimization"
-    ],
-    "title": "What Protein Language Models Learn During RL Fine-Tuning",
-    "uri": "/blog/20251006/index.html"
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Antibody Engineering",
+    "uri": "/tags/antibody-engineering/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
@@ -106,6 +114,22 @@ var relearn_searchindex = [
     ],
     "title": "How Reinforcement Learning Unlocks Protein Design Potential",
     "uri": "/blog/20251005/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Protein Language Models",
+    "uri": "/tags/protein-language-models/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Reinforcement Learning",
+    "uri": "/tags/reinforcement-learning/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
