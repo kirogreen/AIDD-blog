@@ -6,12 +6,12 @@
     <description>This is your new home page.</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 06 Oct 2025 22:22:42 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Oct 2025 16:58:20 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blogs</title>
       <link>http://localhost:1313/blog/index.html</link>
-      <pubDate>Mon, 06 Oct 2025 22:22:42 +0800</pubDate>
+      <pubDate>Wed, 08 Oct 2025 16:58:20 +0800</pubDate>
       <guid>http://localhost:1313/blog/index.html</guid>
       <description></description>
     </item>

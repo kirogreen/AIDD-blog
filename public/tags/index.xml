@@ -6,13 +6,41 @@
     <description></description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 06 Oct 2025 22:22:42 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Oct 2025 16:58:20 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tag :: AlphaFold</title>
+      <link>http://localhost:1313/tags/alphafold/index.html</link>
+      <pubDate>Wed, 08 Oct 2025 16:58:20 +0800</pubDate>
+      <guid>http://localhost:1313/tags/alphafold/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Computational Biology</title>
+      <link>http://localhost:1313/tags/computational-biology/index.html</link>
+      <pubDate>Wed, 08 Oct 2025 16:58:20 +0800</pubDate>
+      <guid>http://localhost:1313/tags/computational-biology/index.html</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tag :: De Novo Design</title>
       <link>http://localhost:1313/tags/de-novo-design/index.html</link>
-      <pubDate>Mon, 06 Oct 2025 22:22:42 +0800</pubDate>
+      <pubDate>Wed, 08 Oct 2025 16:58:20 +0800</pubDate>
       <guid>http://localhost:1313/tags/de-novo-design/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Protein Binders</title>
+      <link>http://localhost:1313/tags/protein-binders/index.html</link>
+      <pubDate>Wed, 08 Oct 2025 16:58:20 +0800</pubDate>
+      <guid>http://localhost:1313/tags/protein-binders/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Therapeutic Proteins</title>
+      <link>http://localhost:1313/tags/therapeutic-proteins/index.html</link>
+      <pubDate>Wed, 08 Oct 2025 16:58:20 +0800</pubDate>
+      <guid>http://localhost:1313/tags/therapeutic-proteins/index.html</guid>
       <description></description>
     </item>
     <item>

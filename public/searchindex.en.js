@@ -1,5 +1,27 @@
 var relearn_searchindex = [
   {
+    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "content": "1. Summary Title: One-shot design of functional protein binders with BindCraft\nJournal: Nature\nPublication Date: 27 August 2025\nDOI: https://doi.org/10.1038/s41586-025-09429-6\nPrimary Research Institution: École Polytechnique Fédérale de Lausanne (EPFL), Switzerland\nAbstract: This paper presents BindCraft, an open-source computational pipeline for de novo protein binder design that achieves experimental success rates of 10-100% across diverse targets. The method leverages AlphaFold2 weights to generate binders with nanomolar affinity without requiring high-throughput screening or known binding sites. The authors validated their approach against challenging targets including cell-surface receptors, allergens, de novo designed proteins, and CRISPR-Cas9, demonstrating therapeutic potential in reducing allergic responses, modulating gene editing, and enabling targeted gene delivery.\n2. Background Protein-protein interactions are fundamental to biological processes, but designing binders that specifically target these interactions has been challenging. Traditional methods like immunization, antibody library screening, and directed evolution are laborious, time-consuming, and offer limited control over target sites. Computational design approaches like Rosetta showed promise but suffered from low success rates (\u003c0.1%) and required extensive sampling. Recent deep learning advances, particularly AlphaFold2, revolutionized structure prediction but still left a gap between backbone generation and functional interface design. The core problem this work addresses is how to reliably design high-affinity protein binders computationally without requiring experimental optimization or prior knowledge of binding sites.\n3. Research Methodology The authors developed BindCraft as an automated pipeline that:\nUses ColabDesign implementation of AlphaFold2 to backpropagate through the network and hallucinate binder sequences Optimizes sequences through four stages: continuous space optimization, probability space optimization, straight-through estimator, and discrete one-hot encoding Applies MPNNsol for sequence optimization of binder core/surface while preserving interface residues Filters designs using AF2 monomer predictions, Rosetta physics-based scoring, and confidence metrics Tests top designs experimentally against 12 diverse targets Key technical aspects include target flexibility during design (unlike fixed-backbone methods), use of AF2 multimer for initial design followed by AF2 monomer for unbiased filtering, and automated workflow requiring minimal user intervention.\n4. Innovations Key innovations compared to previous methods:\nDirect AF2 backpropagation: Unlike RFdiffusion which generates backbones then designs sequences, BindCraft simultaneously optimizes structure, sequence, and interface Target flexibility: Allows binding-induced structural changes in both binder and target, unlike rigid-target approaches High success rates: 46.3% average experimental success rate vs. \u003c0.1% for physics-based methods and ~10% for RFdiffusion No binding site requirement: Successfully designs against targets without characterized binding sites Automated pipeline: Democratizes binder design for non-experts without computational expertise 5. Applications Specific real-world applications demonstrated:\nTherapeutics: Reduced IgE binding to birch allergen in patient-derived samples by up to 50% Gene editing modulation: Designed inhibitors of CRISPR-Cas9 that significantly reduced editing activity Toxin neutralization: Protected cells from bacterial enterotoxin cytotoxicity Targeted gene delivery: Engineered AAV capsids with miniprotein binders for cell-specific transduction Allergen masking: Designed binders against dust mite allergens Derf7 and Derf21 6. Limitations \u0026 Future Work Acknowledgements limitations:\nComputational intensity of AF2 backpropagation (GPU-intensive) AF2 monomer filtering may exclude some high-affinity binders AF2 insensitivity to point mutations could be problematic at interfaces i_pTM metric correlates with binding activity but not affinity Concerns about immunogenicity of synthetic binders remain Future directions suggested:\nIterative pipeline refinement toward “one design, one binder” ideal Addressing immunogenicity and delivery challenges Expanding to even more challenging targets Incorporating recent advances like AlphaFold3 7. Jargon Breakdown Hallucination: A computational technique where neural networks generate novel protein sequences and structures not found in nature by optimizing through the network weights. Important for creating entirely new binders.\ni_pTM (interface predicted TM-score): A confidence metric from AlphaFold that predicts the quality of protein-protein interfaces. Used in BindCraft to filter and rank designs.\nMPNNsol: A message-passing neural network variant optimized for designing soluble protein sequences. Used to improve expression and stability of designed binders.\nBackpropagation through AF2: The process of calculating gradients through the AlphaFold2 network to optimize input sequences for desired properties. Enables direct optimization of binding interfaces.\n8. Connections This paper represents a significant capability jump in AIDD rather than an incremental improvement. It enables:\nReliable de novo binder design without experimental screening Targeting previously “undruggable” interfaces like nucleic acid-binding sites Rapid development of therapeutic candidates and research tools Democratization of protein design to non-specialists The method has been open-sourced on GitHub at: https://github.com/martinpacesa/BindCraft\nThis work bridges the gap between computational prediction and experimental validation, moving the field closer to true “on-demand” protein design capabilities that could transform therapeutic development and biological research.",
+    "description": "daily summary of latest AIDD literature",
+    "tags": [
+      "De Novo Design",
+      "Protein Binders",
+      "AlphaFold",
+      "Computational Biology",
+      "Therapeutic Proteins"
+    ],
+    "title": "AI-Powered One-Shot Design of High-Affinity Protein Binders",
+    "uri": "/blog/20251008/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: AlphaFold",
+    "uri": "/tags/alphafold/index.html"
+  },
+  {
     "breadcrumb": "Learn Latest AIDD",
     "content": "",
     "description": "",
@@ -20,8 +42,48 @@ var relearn_searchindex = [
     "content": "",
     "description": "",
     "tags": [],
+    "title": "Tag :: Computational Biology",
+    "uri": "/tags/computational-biology/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
     "title": "Tag :: De Novo Design",
     "uri": "/tags/de-novo-design/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Categories",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Category :: Literature Review",
+    "uri": "/categories/literature-review/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Protein Binders",
+    "uri": "/tags/protein-binders/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tags",
+    "uri": "/tags/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Therapeutic Proteins",
+    "uri": "/tags/therapeutic-proteins/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Blogs",
@@ -54,14 +116,6 @@ var relearn_searchindex = [
     "uri": "/tags/generative-ai/index.html"
   },
   {
-    "breadcrumb": "Learn Latest AIDD \u003e Categories",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Category :: Literature Review",
-    "uri": "/categories/literature-review/index.html"
-  },
-  {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
     "content": "",
     "description": "",
@@ -76,14 +130,6 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Tag :: RNA Design",
     "uri": "/tags/rna-design/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tags",
-    "uri": "/tags/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
