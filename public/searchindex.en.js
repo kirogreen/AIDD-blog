@@ -1,25 +1,11 @@
 var relearn_searchindex = [
   {
-    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
-    "content": "1. Summary Title: One-shot design of functional protein binders with BindCraft\nJournal: Nature\nPublication Date: 27 August 2025\nDOI: https://doi.org/10.1038/s41586-025-09429-6\nPrimary Research Institution: École Polytechnique Fédérale de Lausanne (EPFL), Switzerland\nAbstract: This paper presents BindCraft, an open-source computational pipeline for de novo protein binder design that achieves experimental success rates of 10-100% across diverse targets. The method leverages AlphaFold2 weights to generate binders with nanomolar affinity without requiring high-throughput screening or known binding sites. The authors validated their approach against challenging targets including cell-surface receptors, allergens, de novo designed proteins, and CRISPR-Cas9, demonstrating therapeutic potential in reducing allergic responses, modulating gene editing, and enabling targeted gene delivery.\n2. Background Protein-protein interactions are fundamental to biological processes, but designing binders that specifically target these interactions has been challenging. Traditional methods like immunization, antibody library screening, and directed evolution are laborious, time-consuming, and offer limited control over target sites. Computational design approaches like Rosetta showed promise but suffered from low success rates (\u003c0.1%) and required extensive sampling. Recent deep learning advances, particularly AlphaFold2, revolutionized structure prediction but still left a gap between backbone generation and functional interface design. The core problem this work addresses is how to reliably design high-affinity protein binders computationally without requiring experimental optimization or prior knowledge of binding sites.\n3. Research Methodology The authors developed BindCraft as an automated pipeline that:\nUses ColabDesign implementation of AlphaFold2 to backpropagate through the network and hallucinate binder sequences Optimizes sequences through four stages: continuous space optimization, probability space optimization, straight-through estimator, and discrete one-hot encoding Applies MPNNsol for sequence optimization of binder core/surface while preserving interface residues Filters designs using AF2 monomer predictions, Rosetta physics-based scoring, and confidence metrics Tests top designs experimentally against 12 diverse targets Key technical aspects include target flexibility during design (unlike fixed-backbone methods), use of AF2 multimer for initial design followed by AF2 monomer for unbiased filtering, and automated workflow requiring minimal user intervention.\n4. Innovations Key innovations compared to previous methods:\nDirect AF2 backpropagation: Unlike RFdiffusion which generates backbones then designs sequences, BindCraft simultaneously optimizes structure, sequence, and interface Target flexibility: Allows binding-induced structural changes in both binder and target, unlike rigid-target approaches High success rates: 46.3% average experimental success rate vs. \u003c0.1% for physics-based methods and ~10% for RFdiffusion No binding site requirement: Successfully designs against targets without characterized binding sites Automated pipeline: Democratizes binder design for non-experts without computational expertise 5. Applications Specific real-world applications demonstrated:\nTherapeutics: Reduced IgE binding to birch allergen in patient-derived samples by up to 50% Gene editing modulation: Designed inhibitors of CRISPR-Cas9 that significantly reduced editing activity Toxin neutralization: Protected cells from bacterial enterotoxin cytotoxicity Targeted gene delivery: Engineered AAV capsids with miniprotein binders for cell-specific transduction Allergen masking: Designed binders against dust mite allergens Derf7 and Derf21 6. Limitations \u0026 Future Work Acknowledgements limitations:\nComputational intensity of AF2 backpropagation (GPU-intensive) AF2 monomer filtering may exclude some high-affinity binders AF2 insensitivity to point mutations could be problematic at interfaces i_pTM metric correlates with binding activity but not affinity Concerns about immunogenicity of synthetic binders remain Future directions suggested:\nIterative pipeline refinement toward “one design, one binder” ideal Addressing immunogenicity and delivery challenges Expanding to even more challenging targets Incorporating recent advances like AlphaFold3 7. Jargon Breakdown Hallucination: A computational technique where neural networks generate novel protein sequences and structures not found in nature by optimizing through the network weights. Important for creating entirely new binders.\ni_pTM (interface predicted TM-score): A confidence metric from AlphaFold that predicts the quality of protein-protein interfaces. Used in BindCraft to filter and rank designs.\nMPNNsol: A message-passing neural network variant optimized for designing soluble protein sequences. Used to improve expression and stability of designed binders.\nBackpropagation through AF2: The process of calculating gradients through the AlphaFold2 network to optimize input sequences for desired properties. Enables direct optimization of binding interfaces.\n8. Connections This paper represents a significant capability jump in AIDD rather than an incremental improvement. It enables:\nReliable de novo binder design without experimental screening Targeting previously “undruggable” interfaces like nucleic acid-binding sites Rapid development of therapeutic candidates and research tools Democratization of protein design to non-specialists The method has been open-sourced on GitHub at: https://github.com/martinpacesa/BindCraft\nThis work bridges the gap between computational prediction and experimental validation, moving the field closer to true “on-demand” protein design capabilities that could transform therapeutic development and biological research.",
-    "description": "daily summary of latest AIDD literature",
-    "tags": [
-      "De Novo Design",
-      "Protein Binders",
-      "AlphaFold",
-      "Computational Biology",
-      "Therapeutic Proteins"
-    ],
-    "title": "AI-Powered One-Shot Design of High-Affinity Protein Binders",
-    "uri": "/blog/20251008/index.html"
-  },
-  {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "Tag :: AlphaFold",
-    "uri": "/tags/alphafold/index.html"
+    "title": "Tag :: Biomedical Data Mining",
+    "uri": "/tags/biomedical-data-mining/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD",
@@ -42,6 +28,90 @@ var relearn_searchindex = [
     "content": "",
     "description": "",
     "tags": [],
+    "title": "Tag :: Compressed Indexing",
+    "uri": "/tags/compressed-indexing/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: De Bruijn Graphs",
+    "uri": "/tags/de-bruijn-graphs/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Genomic Search",
+    "uri": "/tags/genomic-search/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Categories",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Category :: Literature Review",
+    "uri": "/categories/literature-review/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "content": "1. Summary Title: Efficient and accurate search in petabase-scale sequence repositories\nJournal: Nature\nPublication Date: 08 October 2025\nDOI: https://doi.org/10.1038/s41586-025-09603-w\nPrimary Research Institution: ETH Zurich, Switzerland\nAbstract: MetaGraph is a scalable framework for indexing and querying massive biological sequence datasets (DNA, RNA, proteins) using compressed annotated de Bruijn graphs. It enables cost-effective full-text search across 67 petabases of public sequencing data, achieving compression ratios up to 7,400× while supporting exact matching and sensitive alignment. The system democratizes access to entire sequence repositories, enabling discoveries in antibiotic resistance, phage biology, and circular RNA analysis.\n2. Background The exponential growth of public sequencing data (e.g., SRA/ENA archives now exceeding 67 petabases) has made traditional sequence search methods like BLAST impractical for repository-scale queries. Prior challenges included:\nStorage Inefficiency: Raw data requires petabytes of storage, limiting accessibility. Query Performance: Existing tools (BLAST, Mantis, COBS) either lacked scalability or sacrificed accuracy. Metadata Integration: Most methods couldn’t efficiently combine sequence search with sample-specific annotations (e.g., tissue type, geographic location).\nMetaGraph addresses the core problem of making petabase-scale biological sequences efficiently searchable by sequence content rather than just metadata. 3. Research Methodology The technical roadmap involves:\nGraph Construction: Convert raw sequences per sample into de Bruijn graphs (sample graphs) using k-mers (short k-length subsequences). Clean graphs to remove errors/contaminants via abundance-based filtering. Indexing: Merge sample graphs into a joint annotated de Bruijn graph (the “MetaGraph”). Compress the graph using succinct data structures (e.g., BOSS table) and annotations via sparse matrix compression (RowDiff, Multi-BRWT). Query Processing: Support both exact k-mer matching and sequence-to-graph alignment for sensitive searches. Use batch querying to exploit inter-query redundancy, accelerating throughput 32×. Scalability: Distribute indexes across cloud storage (e.g., AWS S3) and enable server-client querying via a Python API. 4. Innovations Lossless Compression at Scale: Achieves 300–7,400× compression while preserving annotations (e.g., sample IDs, k-mer counts), unlike lossy methods (COBS, kmindex). Unified Representation: Handles DNA, RNA, and protein sequences within the same framework. Alignment-Capable Indexing: First method to support both exact matching and sensitive graph-based alignment (via SCA/TCG-Aligner algorithms) at petabase scale. Cost-Efficiency: Reduces search costs to $0.74 per megabase for large queries, making global sequence search economically feasible. 5. Applications Antimicrobial Resistance (AMR) Tracking: Queried 241,384 gut microbiome samples against the CARD database to map global AMR gene spread and phage associations (Fig. 4a–b). Cancer Research: Detected back-splice junctions (circular RNAs) in TCGA/GTEx RNA-seq data, revealing tissue-specific patterns in cancers (e.g., esophageal carcinoma). Viral Discovery: Rapid screening of bacteriophages against metagenomic data to identify host–phage interactions. Drug Repurposing: Enables large-scale homology searches for protein targets across all publicly sequenced organisms. 6. Limitations \u0026 Future Work Limitations:\nLossy Cleaning: Filtering low-abundance k-mers may discard biologically relevant sequences. Static Indexes: Adding new samples requires full index reconstruction. Noisy Query Handling: Limited sensitivity for highly divergent sequences (e.g., nanopore data).\nFuture Directions: Dynamic index updates, support for epigenetic modifications (larger alphabets), and integration with machine learning for sequence generation. 7. Jargon Breakdown De Bruijn Graph: A graph where nodes represent k-mers, and edges represent overlaps of length k-1. Importance: Efficiently represents sequence sets by capturing all possible k-mers. Example: For sequences “ATG” and “TGC”, k-mers (k=2) are AT, TG, GC. k-mer: A contiguous subsequence of length k. Importance: Elementary unit for sequence comparison. Example: “GENOME” → k-mers (k=3): GEN, ENO, NOM, OME. Annotation Matrix: A sparse matrix linking k-mers to metadata (e.g., sample IDs). Importance: Enables querying sequences alongside biological context. RowDiff Compression: Encodes annotation differences between adjacent graph nodes. Importance: Reduces annotation storage by 10–100×. Sequence-to-Graph Alignment: Aligns query sequences to paths in the graph. Importance: Handles mutations/recombinations better than linear reference alignment. 8. Connections to AIDD MetaGraph is a capability-enabling tool for AIDD:\nIt provides a foundational infrastructure for large-scale in silico screening (e.g., searching entire sequence space for drug target homologs or antibody sequences). By compressing and indexing public data, it accelerates data retrieval for training AI models (e.g., protein language models). Not an incremental improvement but a paradigm shift: makes “Google for DNA” feasible, directly supporting drug discovery via rapid biodiversity mining. The method presented in this paper has been open-sourced. Code: GitHub. Data: AWS S3. Web service: MetaGraph Online.",
+    "description": "daily summary of latest AIDD literature",
+    "tags": [
+      "Genomic Search",
+      "Compressed Indexing",
+      "De Bruijn Graphs",
+      "Sequence Alignment",
+      "Biomedical Data Mining"
+    ],
+    "title": "MetaGraph: Google-Scale Search for Petabase Genomic Data",
+    "uri": "/blog/20251009/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Sequence Alignment",
+    "uri": "/tags/sequence-alignment/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tags",
+    "uri": "/tags/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "content": "1. Summary Title: One-shot design of functional protein binders with BindCraft\nJournal: Nature\nPublication Date: 27 August 2025\nDOI: https://doi.org/10.1038/s41586-025-09429-6\nPrimary Research Institution: École Polytechnique Fédérale de Lausanne (EPFL), Switzerland\nAbstract: This paper presents BindCraft, an open-source computational pipeline for de novo protein binder design that achieves experimental success rates of 10-100% across diverse targets. The method leverages AlphaFold2 weights to generate binders with nanomolar affinity without requiring high-throughput screening or known binding sites. The authors validated their approach against challenging targets including cell-surface receptors, allergens, de novo designed proteins, and CRISPR-Cas9, demonstrating therapeutic potential in reducing allergic responses, modulating gene editing, and enabling targeted gene delivery.\n2. Background Protein-protein interactions are fundamental to biological processes, but designing binders that specifically target these interactions has been challenging. Traditional methods like immunization, antibody library screening, and directed evolution are laborious, time-consuming, and offer limited control over target sites. Computational design approaches like Rosetta showed promise but suffered from low success rates (\u003c0.1%) and required extensive sampling. Recent deep learning advances, particularly AlphaFold2, revolutionized structure prediction but still left a gap between backbone generation and functional interface design. The core problem this work addresses is how to reliably design high-affinity protein binders computationally without requiring experimental optimization or prior knowledge of binding sites.\n3. Research Methodology The authors developed BindCraft as an automated pipeline that:\nUses ColabDesign implementation of AlphaFold2 to backpropagate through the network and hallucinate binder sequences Optimizes sequences through four stages: continuous space optimization, probability space optimization, straight-through estimator, and discrete one-hot encoding Applies MPNNsol for sequence optimization of binder core/surface while preserving interface residues Filters designs using AF2 monomer predictions, Rosetta physics-based scoring, and confidence metrics Tests top designs experimentally against 12 diverse targets Key technical aspects include target flexibility during design (unlike fixed-backbone methods), use of AF2 multimer for initial design followed by AF2 monomer for unbiased filtering, and automated workflow requiring minimal user intervention.\n4. Innovations Key innovations compared to previous methods:\nDirect AF2 backpropagation: Unlike RFdiffusion which generates backbones then designs sequences, BindCraft simultaneously optimizes structure, sequence, and interface Target flexibility: Allows binding-induced structural changes in both binder and target, unlike rigid-target approaches High success rates: 46.3% average experimental success rate vs. \u003c0.1% for physics-based methods and ~10% for RFdiffusion No binding site requirement: Successfully designs against targets without characterized binding sites Automated pipeline: Democratizes binder design for non-experts without computational expertise 5. Applications Specific real-world applications demonstrated:\nTherapeutics: Reduced IgE binding to birch allergen in patient-derived samples by up to 50% Gene editing modulation: Designed inhibitors of CRISPR-Cas9 that significantly reduced editing activity Toxin neutralization: Protected cells from bacterial enterotoxin cytotoxicity Targeted gene delivery: Engineered AAV capsids with miniprotein binders for cell-specific transduction Allergen masking: Designed binders against dust mite allergens Derf7 and Derf21 6. Limitations \u0026 Future Work Acknowledgements limitations:\nComputational intensity of AF2 backpropagation (GPU-intensive) AF2 monomer filtering may exclude some high-affinity binders AF2 insensitivity to point mutations could be problematic at interfaces i_pTM metric correlates with binding activity but not affinity Concerns about immunogenicity of synthetic binders remain Future directions suggested:\nIterative pipeline refinement toward “one design, one binder” ideal Addressing immunogenicity and delivery challenges Expanding to even more challenging targets Incorporating recent advances like AlphaFold3 7. Jargon Breakdown Hallucination: A computational technique where neural networks generate novel protein sequences and structures not found in nature by optimizing through the network weights. Important for creating entirely new binders.\ni_pTM (interface predicted TM-score): A confidence metric from AlphaFold that predicts the quality of protein-protein interfaces. Used in BindCraft to filter and rank designs.\nMPNNsol: A message-passing neural network variant optimized for designing soluble protein sequences. Used to improve expression and stability of designed binders.\nBackpropagation through AF2: The process of calculating gradients through the AlphaFold2 network to optimize input sequences for desired properties. Enables direct optimization of binding interfaces.\n8. Connections This paper represents a significant capability jump in AIDD rather than an incremental improvement. It enables:\nReliable de novo binder design without experimental screening Targeting previously “undruggable” interfaces like nucleic acid-binding sites Rapid development of therapeutic candidates and research tools Democratization of protein design to non-specialists The method has been open-sourced on GitHub at: https://github.com/martinpacesa/BindCraft\nThis work bridges the gap between computational prediction and experimental validation, moving the field closer to true “on-demand” protein design capabilities that could transform therapeutic development and biological research.",
+    "description": "daily summary of latest AIDD literature",
+    "tags": [
+      "De Novo Design",
+      "Protein Binders",
+      "AlphaFold",
+      "Computational Biology",
+      "Therapeutic Proteins"
+    ],
+    "title": "AI-Powered One-Shot Design of High-Affinity Protein Binders",
+    "uri": "/blog/20251008/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: AlphaFold",
+    "uri": "/tags/alphafold/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
     "title": "Tag :: Computational Biology",
     "uri": "/tags/computational-biology/index.html"
   },
@@ -54,28 +124,12 @@ var relearn_searchindex = [
     "uri": "/tags/de-novo-design/index.html"
   },
   {
-    "breadcrumb": "Learn Latest AIDD \u003e Categories",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Category :: Literature Review",
-    "uri": "/categories/literature-review/index.html"
-  },
-  {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
     "title": "Tag :: Protein Binders",
     "uri": "/tags/protein-binders/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tags",
-    "uri": "/tags/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",

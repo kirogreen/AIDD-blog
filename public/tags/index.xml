@@ -6,8 +6,43 @@
     <description></description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 08 Oct 2025 16:58:20 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Oct 2025 13:16:25 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tag :: Biomedical Data Mining</title>
+      <link>http://localhost:1313/tags/biomedical-data-mining/index.html</link>
+      <pubDate>Thu, 09 Oct 2025 13:16:25 +0800</pubDate>
+      <guid>http://localhost:1313/tags/biomedical-data-mining/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Compressed Indexing</title>
+      <link>http://localhost:1313/tags/compressed-indexing/index.html</link>
+      <pubDate>Thu, 09 Oct 2025 13:16:25 +0800</pubDate>
+      <guid>http://localhost:1313/tags/compressed-indexing/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: De Bruijn Graphs</title>
+      <link>http://localhost:1313/tags/de-bruijn-graphs/index.html</link>
+      <pubDate>Thu, 09 Oct 2025 13:16:25 +0800</pubDate>
+      <guid>http://localhost:1313/tags/de-bruijn-graphs/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Genomic Search</title>
+      <link>http://localhost:1313/tags/genomic-search/index.html</link>
+      <pubDate>Thu, 09 Oct 2025 13:16:25 +0800</pubDate>
+      <guid>http://localhost:1313/tags/genomic-search/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Sequence Alignment</title>
+      <link>http://localhost:1313/tags/sequence-alignment/index.html</link>
+      <pubDate>Thu, 09 Oct 2025 13:16:25 +0800</pubDate>
+      <guid>http://localhost:1313/tags/sequence-alignment/index.html</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tag :: AlphaFold</title>
       <link>http://localhost:1313/tags/alphafold/index.html</link>
