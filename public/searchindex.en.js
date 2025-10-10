@@ -4,8 +4,30 @@ var relearn_searchindex = [
     "content": "",
     "description": "",
     "tags": [],
-    "title": "Tag :: Biomedical Data Mining",
-    "uri": "/tags/biomedical-data-mining/index.html"
+    "title": "Tag :: Antibody",
+    "uri": "/tags/antibody/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Bayesian Flow Networks",
+    "uri": "/tags/bayesian-flow-networks/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Blogs",
+    "content": "Summary:\nTitle: Protein sequence modelling with Bayesian flow networks Journal: Nature Communications Publication Date: 03 April 2025 DOI: 10.1038/s41467-025-58250-2 Primary Research Institution: InstaDeep, London, England Abstract: This work introduces ProtBFN, a 650M parameter Bayesian Flow Network (BFN) model for protein sequence generation. Trained on curated UniProtKB sequences, it outperforms autoregressive (e.g., ProtGPT2) and discrete diffusion (e.g., EvoDiff) baselines in generating diverse, novel, and structurally coherent proteins. Fine-tuned on antibody heavy chains (AbBFN), it achieves competitive zero-shot conditional generation (e.g., CDR inpainting) compared to specialized BERT-style models, demonstrating BFNs’ flexibility for both unconditional and conditional tasks without task-specific training. Background: The vast combinatorial space of possible protein sequences remains largely unexplored, limiting our understanding of biology and hindering the design of novel therapeutic proteins. Machine learning, particularly methods inspired by natural language processing (NLP), has emerged as a key tool. However, prior state-of-the-art methods had significant limitations: autoregressive models (e.g., ProtGPT2) generate sequences left-to-right, which is ill-suited for proteins where functionally critical residues are dispersed throughout the sequence. Discrete diffusion models (e.g., EvoDiff) struggled to excel at both high-quality de novo (unconditional) generation and flexible conditional generation (e.g., inpainting) within a single framework. This work aims to solve the problem of creating a unified model capable of both tasks effectively.\nResearch Methodology: The authors employed Bayesian Flow Networks (BFNs), a generative framework that models the continuous parameters of a distribution over discrete data (amino acid sequences). The technical roadmap involved:\nTraining: Framed as a communication protocol where a “sender” (training data) sends progressively less noisy observations of a true sequence to a “receiver” (the neural network). The network (a 650M parameter transformer) learns to predict the parameters of the data distribution from these observations. Sampling: A continuous-time denoising process starts from a random prior and iteratively refines the distribution parameters to generate a novel sequence. Data: A curated dataset (UniProtCC) from UniProtKB, filtered for high-confidence protein existence. Model Variants: A general protein model (ProtBFN) was trained on UniProtCC. It was then fine-tuned on antibody heavy-chain sequences from the Observed Antibody Space (OAS) database to create AbBFN. Conditional Generation: For tasks like inpainting (e.g., predicting a missing CDR region), they used a Sequential Monte Carlo (SMC) sampling method on top of the unconditionally trained model, enabling zero-shot conditional generation. Innovations:\nUnified Framework: Demonstrates that BFNs can effectively handle both unconditional generation of novel protein sequences and arbitrary conditional generation (e.g., inpainting) within a single model, a key advantage over previous paradigms. Novel Sampling: Introduced a “Reconstructed ODE” (R-ODE) sampling method and “entropy encoding” (instead of time encoding) to stabilize generation and improve sample quality. Structural Coherence: Generated sequences show high predicted structural confidence (pLDDT) and diversity, covering a broader swath of known protein space (proteome coverage) than baselines while maintaining novelty (low sequence identity to training data). Zero-shot Conditional Capability: Shows that a model trained only for unconditional generation (AbBFN) can perform competitively on conditional tasks like antibody region inpainting without any task-specific training, challenging the need for specialized BERT-style models. Applications:\nDe Novo Protein Design: Generating entirely novel, functional protein sequences for therapeutic or enzymatic applications (e.g., novel enzymes, biosensors). Antibody Engineering: Specifically, the design of antibody variable regions. AbBFN can be used to: Generate novel, stable antibody heavy-chain candidates from scratch. “Fix” or redesign specific regions (e.g., CDRs for affinity maturation, frameworks for stability) of existing antibody sequences through inpainting. Exploring Protein Space: Systematically generating and studying proteins in uncharted regions of sequence space to uncover new folds and functions. Limitations \u0026 Future Work:\nLimitations: The authors note that BFNs are an emerging technology with fundamental questions remaining. AbBFN underperforms specialized models on the highly diverse CDR-H3 region prediction, likely due to the unique biological processes (V(D)J recombination) generating its diversity, which a general protein model may not capture perfectly. The sampling process sometimes generates low-quality sequences, necessitating a filtering step. Future Work: Suggested directions include extending BFNs to other biological sequences (RNA/DNA), developing multimodal BFNs that integrate sequence and structural data, and incorporating advanced sampling techniques from the diffusion literature to further improve performance. Jargon Breakdown:\nBayesian Flow Networks (BFNs): A class of generative models that learn a distribution over data by modeling continuous parameters of that distribution, rather than the data directly. This makes them naturally suited for discrete data like sequences. Importance: Provides a unified framework for generating and conditioning on discrete data. Example: ProtBFN uses BFNs to model the distribution of amino acids at each position in a protein. Inpainting: A conditional generation task where a model is given a partial sequence and must generate the missing parts. Importance: Critical for protein design, e.g., redesigning a specific loop while keeping the rest of the protein fixed. Example: Using AbBFN to generate a missing CDR-H3 sequence given the rest of an antibody chain. pLDDT (predicted Local Distance Difference Test): A per-residue confidence score (0-100) output by structure prediction models like AlphaFold or ESMFold. Higher scores indicate higher confidence in the predicted local structure. Importance: Used as a proxy metric for the structural plausibility and “foldability” of a generated protein sequence. Example: ProtBFN generates sequences with high mean pLDDT, suggesting they will fold into coherent structures. Unconditional vs. Conditional Generation: Unconditional generation means creating samples from the entire learned distribution (e.g., generating a random protein). Conditional generation means creating samples that satisfy given constraints (e.g., generating a protein that contains a specific motif). Importance: A model that excels at both is more flexible and powerful for design tasks. Sequential Monte Carlo (SMC): A sampling technique used for conditional generation with BFNs in this work. It uses multiple “particles” (guesses) that are resampled based on their agreement with the conditioning information. Importance: Enables the unconditionally trained BFN to perform complex conditional tasks like inpainting accurately. Connections: This paper represents a foundational advancement in the AIDD field, enabling a new capability rather than being an incremental improvement. It introduces a new model paradigm (BFNs) for biological sequences that challenges the dominance of autoregressive and diffusion models. Its key contribution is demonstrating that a single model architecture can achieve state-of-the-art performance in both unconditional generation and flexible conditional generation without task-specific training. This unification simplifies the model design process for protein engineers and opens new avenues for exploring sequence-structure-function relationships. It directly connects to and advances core AIDD themes like de novo protein design and antibody engineering.\nThe method presented in this paper has been open-sourced. Code is available at: https://github.com/instadeepai/protein-sequence-bfn",
+    "description": "daily summary of latest AIDD literature",
+    "tags": [
+      "Protein Language Models",
+      "De Novo Design",
+      "Antibody",
+      "Generative AI",
+      "Bayesian Flow Networks"
+    ],
+    "title": "Bayesian Flow Networks Enable Unified Protein and Antibody Generation",
+    "uri": "/blog/20251010/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD",
@@ -22,6 +44,54 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Categories",
     "uri": "/categories/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: De Novo Design",
+    "uri": "/tags/de-novo-design/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Generative AI",
+    "uri": "/tags/generative-ai/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Categories",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Category :: Literature Review",
+    "uri": "/categories/literature-review/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Protein Language Models",
+    "uri": "/tags/protein-language-models/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tags",
+    "uri": "/tags/index.html"
+  },
+  {
+    "breadcrumb": "Learn Latest AIDD \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Biomedical Data Mining",
+    "uri": "/tags/biomedical-data-mining/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
@@ -48,14 +118,6 @@ var relearn_searchindex = [
     "uri": "/tags/genomic-search/index.html"
   },
   {
-    "breadcrumb": "Learn Latest AIDD \u003e Categories",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Category :: Literature Review",
-    "uri": "/categories/literature-review/index.html"
-  },
-  {
     "breadcrumb": "Learn Latest AIDD \u003e Blogs",
     "content": "1. Summary Title: Efficient and accurate search in petabase-scale sequence repositories\nJournal: Nature\nPublication Date: 08 October 2025\nDOI: https://doi.org/10.1038/s41586-025-09603-w\nPrimary Research Institution: ETH Zurich, Switzerland\nAbstract: MetaGraph is a scalable framework for indexing and querying massive biological sequence datasets (DNA, RNA, proteins) using compressed annotated de Bruijn graphs. It enables cost-effective full-text search across 67 petabases of public sequencing data, achieving compression ratios up to 7,400× while supporting exact matching and sensitive alignment. The system democratizes access to entire sequence repositories, enabling discoveries in antibiotic resistance, phage biology, and circular RNA analysis.\n2. Background The exponential growth of public sequencing data (e.g., SRA/ENA archives now exceeding 67 petabases) has made traditional sequence search methods like BLAST impractical for repository-scale queries. Prior challenges included:\nStorage Inefficiency: Raw data requires petabytes of storage, limiting accessibility. Query Performance: Existing tools (BLAST, Mantis, COBS) either lacked scalability or sacrificed accuracy. Metadata Integration: Most methods couldn’t efficiently combine sequence search with sample-specific annotations (e.g., tissue type, geographic location).\nMetaGraph addresses the core problem of making petabase-scale biological sequences efficiently searchable by sequence content rather than just metadata. 3. Research Methodology The technical roadmap involves:\nGraph Construction: Convert raw sequences per sample into de Bruijn graphs (sample graphs) using k-mers (short k-length subsequences). Clean graphs to remove errors/contaminants via abundance-based filtering. Indexing: Merge sample graphs into a joint annotated de Bruijn graph (the “MetaGraph”). Compress the graph using succinct data structures (e.g., BOSS table) and annotations via sparse matrix compression (RowDiff, Multi-BRWT). Query Processing: Support both exact k-mer matching and sequence-to-graph alignment for sensitive searches. Use batch querying to exploit inter-query redundancy, accelerating throughput 32×. Scalability: Distribute indexes across cloud storage (e.g., AWS S3) and enable server-client querying via a Python API. 4. Innovations Lossless Compression at Scale: Achieves 300–7,400× compression while preserving annotations (e.g., sample IDs, k-mer counts), unlike lossy methods (COBS, kmindex). Unified Representation: Handles DNA, RNA, and protein sequences within the same framework. Alignment-Capable Indexing: First method to support both exact matching and sensitive graph-based alignment (via SCA/TCG-Aligner algorithms) at petabase scale. Cost-Efficiency: Reduces search costs to $0.74 per megabase for large queries, making global sequence search economically feasible. 5. Applications Antimicrobial Resistance (AMR) Tracking: Queried 241,384 gut microbiome samples against the CARD database to map global AMR gene spread and phage associations (Fig. 4a–b). Cancer Research: Detected back-splice junctions (circular RNAs) in TCGA/GTEx RNA-seq data, revealing tissue-specific patterns in cancers (e.g., esophageal carcinoma). Viral Discovery: Rapid screening of bacteriophages against metagenomic data to identify host–phage interactions. Drug Repurposing: Enables large-scale homology searches for protein targets across all publicly sequenced organisms. 6. Limitations \u0026 Future Work Limitations:\nLossy Cleaning: Filtering low-abundance k-mers may discard biologically relevant sequences. Static Indexes: Adding new samples requires full index reconstruction. Noisy Query Handling: Limited sensitivity for highly divergent sequences (e.g., nanopore data).\nFuture Directions: Dynamic index updates, support for epigenetic modifications (larger alphabets), and integration with machine learning for sequence generation. 7. Jargon Breakdown De Bruijn Graph: A graph where nodes represent k-mers, and edges represent overlaps of length k-1. Importance: Efficiently represents sequence sets by capturing all possible k-mers. Example: For sequences “ATG” and “TGC”, k-mers (k=2) are AT, TG, GC. k-mer: A contiguous subsequence of length k. Importance: Elementary unit for sequence comparison. Example: “GENOME” → k-mers (k=3): GEN, ENO, NOM, OME. Annotation Matrix: A sparse matrix linking k-mers to metadata (e.g., sample IDs). Importance: Enables querying sequences alongside biological context. RowDiff Compression: Encodes annotation differences between adjacent graph nodes. Importance: Reduces annotation storage by 10–100×. Sequence-to-Graph Alignment: Aligns query sequences to paths in the graph. Importance: Handles mutations/recombinations better than linear reference alignment. 8. Connections to AIDD MetaGraph is a capability-enabling tool for AIDD:\nIt provides a foundational infrastructure for large-scale in silico screening (e.g., searching entire sequence space for drug target homologs or antibody sequences). By compressing and indexing public data, it accelerates data retrieval for training AI models (e.g., protein language models). Not an incremental improvement but a paradigm shift: makes “Google for DNA” feasible, directly supporting drug discovery via rapid biodiversity mining. The method presented in this paper has been open-sourced. Code: GitHub. Data: AWS S3. Web service: MetaGraph Online.",
     "description": "daily summary of latest AIDD literature",
@@ -76,14 +138,6 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Tag :: Sequence Alignment",
     "uri": "/tags/sequence-alignment/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tags",
-    "uri": "/tags/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Blogs",
@@ -114,14 +168,6 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Tag :: Computational Biology",
     "uri": "/tags/computational-biology/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: De Novo Design",
-    "uri": "/tags/de-novo-design/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
@@ -160,14 +206,6 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Tag :: Diffusion Models",
     "uri": "/tags/diffusion-models/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: Generative AI",
-    "uri": "/tags/generative-ai/index.html"
   },
   {
     "breadcrumb": "Learn Latest AIDD \u003e Tags",
@@ -220,14 +258,6 @@ var relearn_searchindex = [
     "content": "",
     "description": "",
     "tags": [],
-    "title": "Tag :: Protein Language Models",
-    "uri": "/tags/protein-language-models/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
     "title": "Tag :: Reinforcement Learning",
     "uri": "/tags/reinforcement-learning/index.html"
   },
@@ -259,13 +289,5 @@ var relearn_searchindex = [
     ],
     "title": "AI Designs First Phospho-Specific Protein Binders",
     "uri": "/blog/20251003/index.html"
-  },
-  {
-    "breadcrumb": "Learn Latest AIDD \u003e Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: Antibody",
-    "uri": "/tags/antibody/index.html"
   }
 ]

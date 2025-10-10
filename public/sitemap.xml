@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/biomedical-data-mining/index.html</loc>
-    <lastmod>2025-10-09T13:16:25+08:00</lastmod>
+    <loc>http://localhost:1313/tags/antibody/index.html</loc>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/bayesian-flow-networks/index.html</loc>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/20251010/index.html</loc>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/blog/index.html</loc>
-    <lastmod>2025-10-09T13:16:25+08:00</lastmod>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/categories/index.html</loc>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/de-novo-design/index.html</loc>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/generative-ai/index.html</loc>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/categories/literature-review/index.html</loc>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/protein-language-models/index.html</loc>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/index.html</loc>
+    <lastmod>2025-10-10T13:15:06+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/biomedical-data-mining/index.html</loc>
     <lastmod>2025-10-09T13:16:25+08:00</lastmod>
   </url>
   <url>
@@ -25,19 +57,11 @@
     <lastmod>2025-10-09T13:16:25+08:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/categories/literature-review/index.html</loc>
-    <lastmod>2025-10-09T13:16:25+08:00</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:1313/blog/20251009/index.html</loc>
     <lastmod>2025-10-09T13:16:25+08:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/tags/sequence-alignment/index.html</loc>
-    <lastmod>2025-10-09T13:16:25+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/index.html</loc>
     <lastmod>2025-10-09T13:16:25+08:00</lastmod>
   </url>
   <url>
@@ -50,10 +74,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/tags/computational-biology/index.html</loc>
-    <lastmod>2025-10-08T16:58:20+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/de-novo-design/index.html</loc>
     <lastmod>2025-10-08T16:58:20+08:00</lastmod>
   </url>
   <url>
@@ -70,10 +90,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/tags/diffusion-models/index.html</loc>
-    <lastmod>2025-10-06T22:22:42+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/generative-ai/index.html</loc>
     <lastmod>2025-10-06T22:22:42+08:00</lastmod>
   </url>
   <url>
@@ -97,10 +113,6 @@
     <lastmod>2025-10-05T20:21:10+08:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/protein-language-models/index.html</loc>
-    <lastmod>2025-10-05T20:21:10+08:00</lastmod>
-  </url>
-  <url>
     <loc>http://localhost:1313/tags/reinforcement-learning/index.html</loc>
     <lastmod>2025-10-05T20:21:10+08:00</lastmod>
   </url>
@@ -114,10 +126,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/blog/20251003/index.html</loc>
-    <lastmod>2025-10-04T21:12:52+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/antibody/index.html</loc>
     <lastmod>2025-10-04T21:12:52+08:00</lastmod>
   </url>
 </urlset>

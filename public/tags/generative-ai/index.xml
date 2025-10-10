@@ -6,8 +6,15 @@
     <description></description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 06 Oct 2025 22:22:42 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Oct 2025 13:15:06 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bayesian Flow Networks Enable Unified Protein and Antibody Generation</title>
+      <link>http://localhost:1313/blog/20251010/index.html</link>
+      <pubDate>Fri, 10 Oct 2025 13:15:06 +0800</pubDate>
+      <guid>http://localhost:1313/blog/20251010/index.html</guid>
+      <description>daily summary of latest AIDD literature</description>
+    </item>
     <item>
       <title>Diffusion Model RFDpoly Enables De Novo RNA and Nucleoprotein Design</title>
       <link>http://localhost:1313/blog/20251006/index.html</link>

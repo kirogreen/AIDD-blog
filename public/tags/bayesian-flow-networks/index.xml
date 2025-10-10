@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Antibody :: Tag :: Learn Latest AIDD</title>
-    <link>http://localhost:1313/tags/antibody/index.html</link>
+    <title>Bayesian Flow Networks :: Tag :: Learn Latest AIDD</title>
+    <link>http://localhost:1313/tags/bayesian-flow-networks/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 10 Oct 2025 13:15:06 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/antibody/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/bayesian-flow-networks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bayesian Flow Networks Enable Unified Protein and Antibody Generation</title>
       <link>http://localhost:1313/blog/20251010/index.html</link>
       <pubDate>Fri, 10 Oct 2025 13:15:06 +0800</pubDate>
       <guid>http://localhost:1313/blog/20251010/index.html</guid>
-      <description>daily summary of latest AIDD literature</description>
-    </item>
-    <item>
-      <title>AI Designs First Phospho-Specific Protein Binders</title>
-      <link>http://localhost:1313/blog/20251003/index.html</link>
-      <pubDate>Sat, 04 Oct 2025 21:12:52 +0800</pubDate>
-      <guid>http://localhost:1313/blog/20251003/index.html</guid>
       <description>daily summary of latest AIDD literature</description>
     </item>
   </channel>
