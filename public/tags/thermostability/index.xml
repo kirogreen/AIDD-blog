@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thermostability :: Tag :: Learn Latest AIDD</title>
+    <link>http://localhost:1313/tags/thermostability/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Oct 2025 13:22:52 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/thermostability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Evolution: AI-Driven Protein Thermostability Engineering</title>
+      <link>http://localhost:1313/blog/20251011/index.html</link>
+      <pubDate>Sat, 11 Oct 2025 13:22:52 +0800</pubDate>
+      <guid>http://localhost:1313/blog/20251011/index.html</guid>
+      <description>daily summary of latest AIDD literature</description>
+    </item>
+  </channel>
+</rss>
